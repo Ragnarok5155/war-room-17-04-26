@@ -1,0 +1,697 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WAR ROOM — Post-Market 17 Abr 2026 · 21:00 UTC · 13° VERDE · ORMUZ ABRE · WTI −11% · S&P 7,126 ATH · 🟢</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,300&family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#040204;--bg2:#080408;--bg3:#0e060e;--bg4:#130813;
+  --amber:#f5a623;--amber-dim:#8a5e12;
+  --red:#e84040;--red-dim:#5a1a1a;--red-mid:#9b2626;--red-bright:#ff4444;
+  --green:#00d68f;--green-dim:#0a3d28;
+  --yellow:#f0c040;--yellow-dim:#5a4010;
+  --cyan:#00bcd4;--cyan-dim:#0a3a42;
+  --orange:#ff8c35;--orange-dim:#5a2c0a;
+  --magenta:#ff2d55;--magenta-dim:#5a0f1f;
+  --violet:#bf5af2;--violet-dim:#3d1a5a;
+
+  --d16a:#1a9e72;--d16a-dim:rgba(26,158,114,0.07);--d16a-mid:rgba(26,158,114,0.15);--d16a-bright:rgba(26,158,114,0.42);
+  --d16a-pulse:#22d49a;--d16a-glow:rgba(34,212,154,0.22);
+  --d16a-border:rgba(26,158,114,0.07);--d16a-border-mid:rgba(26,158,114,0.28);--d16a-border-bright:rgba(26,158,114,0.55);
+
+  --d17a:#00b86e;--d17a-dim:rgba(0,184,110,0.07);--d17a-mid:rgba(0,184,110,0.18);--d17a-bright:rgba(0,184,110,0.45);
+  --d17a-pulse:#26d07c;--d17a-glow:rgba(38,208,124,0.22);
+  --d17a-border:rgba(0,184,110,0.07);--d17a-border-mid:rgba(0,184,110,0.28);--d17a-border-bright:rgba(0,184,110,0.55);
+
+  --d14a:#c8a050;--d14a-dim:rgba(200,160,80,0.07);--d14a-mid:rgba(200,160,80,0.18);--d14a-bright:rgba(200,160,80,0.45);
+  --d14a-pulse:#e8c060;--d14a-glow:rgba(232,192,96,0.22);
+
+  --d15a:#009aaa;--d15a-dim:rgba(0,154,170,0.07);--d15a-mid:rgba(0,154,170,0.18);--d15a-bright:rgba(0,154,170,0.45);
+  --d15a-pulse:#00d4e8;--d15a-glow:rgba(0,212,232,0.22);
+  --d15a-border:rgba(0,154,170,0.07);--d15a-border-mid:rgba(0,154,170,0.28);--d15a-border-bright:rgba(0,154,170,0.55);
+
+  --border:var(--d17a-border);--border-mid:rgba(0,184,110,0.28);--border-bright:rgba(0,184,110,0.55);--border-mid:var(--d17a-border-mid);--border-bright:var(--d17a-border-bright);
+
+  --silver:#c8c8c8;--white:#eae8e0;--gray:#2d3748;--gray-mid:#4a5568;--gray-light:#718096;
+  --mono:'IBM Plex Mono',monospace;--display:'Bebas Neue',sans-serif;
+  --body:'Barlow',sans-serif;--cond:'Barlow Condensed',sans-serif
+}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:var(--body);font-weight:300;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px);pointer-events:none;z-index:9999}
+body::after{content:'';position:fixed;top:0;left:0;right:0;height:400px;background:radial-gradient(ellipse at 50% 0%,rgba(0,184,110,0.1) 0%,rgba(38,208,124,0.04) 60%,transparent 70%);pointer-events:none;z-index:0}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:rgba(0,184,110,0.5)}
+#progress-bar{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,#001a0d,var(--d17a-pulse),#26d07c);z-index:9998;transition:width .1s linear;pointer-events:none}
+
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 8px rgba(232,96,10,0.3);border-color:rgba(232,96,10,0.65)}50%{box-shadow:0 0 32px rgba(255,119,34,0.6);border-color:rgba(255,119,34,0.9)}}
+@keyframes pulse-glow-hard{0%,100%{box-shadow:0 0 14px rgba(232,96,10,0.45);opacity:1}50%{box-shadow:0 0 42px rgba(255,119,34,0.7);opacity:.88}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.12}}
+@keyframes blink-slow{0%,100%{opacity:1}50%{opacity:0.4}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes crisis-pulse-bg{0%{background:rgba(181,0,0,0.05)}50%{background:rgba(181,0,0,0.12)}100%{background:rgba(181,0,0,0.05)}}
+@keyframes warning-flash{0%,100%{opacity:.75}50%{opacity:1}}
+@keyframes wr-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes deadline-pulse{0%{text-shadow:0 0 8px rgba(255,119,34,0.4)}50%{text-shadow:0 0 24px rgba(255,119,34,0.9),0 0 48px rgba(232,96,10,0.3)}100%{text-shadow:0 0 8px rgba(255,119,34,0.4)}}
+
+#section-dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:400;display:flex;flex-direction:column;gap:10px}
+.s-dot{width:6px;height:6px;border-radius:50%;background:var(--gray-mid);border:1px solid var(--gray-mid);cursor:pointer;transition:all .25s;position:relative}
+.s-dot.active{background:var(--d17a-pulse);border-color:var(--d17a-pulse);transform:scale(1.6)}
+.s-dot:hover{background:rgba(0,184,110,0.2);border-color:var(--d17a-pulse)}
+.s-dot-tip{position:absolute;right:16px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--mono);font-size:.5rem;letter-spacing:.1em;color:var(--d14a-pulse);background:rgba(4,2,4,0.96);border:1px solid rgba(200,160,80,0.3);padding:3px 9px;opacity:0;pointer-events:none;transition:opacity .2s;text-transform:uppercase}
+.s-dot:hover .s-dot-tip{opacity:1}
+@media(max-width:768px){#section-dots{display:none}}
+
+.crisis-float{position:fixed;bottom:52px;right:16px;z-index:500;background:rgba(212,160,23,0.12);border:1px solid rgba(212,160,23,0.55);backdrop-filter:blur(12px);padding:8px 14px;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:var(--d14a-pulse);text-transform:uppercase;animation:pulse-glow 2.5s ease-in-out infinite}
+@media(max-width:640px){.crisis-float{bottom:44px;right:8px;font-size:.5rem;padding:5px 10px}}
+
+#market-pulse{position:fixed;bottom:0;left:0;right:0;z-index:450;background:rgba(4,2,4,0.97);border-top:1px solid rgba(0,184,110,0.55);backdrop-filter:blur(16px);display:flex;align-items:center;height:40px;overflow:hidden;transform:translateY(100%);transition:transform .4s ease}
+#market-pulse.show{transform:translateY(0)}
+.pulse-label{font-family:var(--mono);font-size:.5rem;letter-spacing:.18em;color:var(--d17a-pulse);padding:0 14px;text-transform:uppercase;flex-shrink:0;border-right:1px solid rgba(0,184,110,0.3);background:rgba(0,184,110,0.08)}
+.pulse-items{display:flex;flex:1;overflow:hidden}
+.pulse-item{display:flex;align-items:center;gap:7px;padding:0 16px;border-right:1px solid rgba(255,255,255,0.04);flex-shrink:0}
+.pulse-ticker{font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;color:var(--gray-light);text-transform:uppercase}
+.pulse-val{font-family:var(--mono);font-size:.62rem;font-weight:600}
+.pulse-val.r{color:var(--red)}.pulse-val.g{color:var(--green)}.pulse-val.a{color:var(--amber)}.pulse-val.o{color:var(--orange)}.pulse-val.d{color:var(--orange)}.pulse-val.w{color:var(--white)}
+.pulse-delta{font-family:var(--mono);font-size:.5rem}
+.pulse-delta.dn{color:var(--red)}.pulse-delta.up{color:var(--green)}.pulse-delta.neu{color:var(--gray-light)}
+.pulse-alert{margin-left:auto;padding:0 16px;display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.5rem;letter-spacing:.1em;color:var(--orange);flex-shrink:0}
+@media(max-width:640px){.pulse-items .pulse-item:nth-child(n+4){display:none}}
+
+.update-ribbon{background:linear-gradient(90deg,rgba(181,0,0,0.32),rgba(181,0,0,0.12),rgba(80,0,0,0.04));border-bottom:1px solid rgba(181,0,0,0.7);padding:0 5vw;display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;position:fixed;top:0;left:0;right:0;z-index:600;height:34px;overflow:hidden}
+.ribbon-badge{background:rgba(232,96,10,0.8);color:#fff;font-weight:700;padding:2px 11px;letter-spacing:.12em;font-size:.58rem;flex-shrink:0;animation:pulse-glow-hard 1.5s ease-in-out infinite}
+.ribbon-text{color:rgba(255,32,32,0.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+.ribbon-days{margin-left:auto;display:flex;gap:5px;flex-shrink:0}
+.rd{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;padding:2px 8px;border:1px solid var(--border);color:var(--gray-light);white-space:nowrap}
+
+.rd.current{border-color:var(--d17a);color:var(--d17a-pulse);background:rgba(0,184,110,0.12);animation:pulse-glow 1.8s ease-in-out infinite;font-weight:700}
+@media(max-width:600px){.ribbon-text{display:none}.rd:not(.current):not(.d2a-hist){display:none}.ribbon-days{margin-left:8px}}
+
+.nav{position:fixed;top:34px;left:0;right:0;z-index:500;background:rgba(4,2,4,0.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-mid);height:52px;display:flex;align-items:center;padding:0 5vw;justify-content:space-between}
+.nav-brand{font-family:var(--display);font-size:1.5rem;letter-spacing:0.12em;color:var(--d14a-pulse)}
+.nav-badge{font-family:var(--mono);font-size:.63rem;letter-spacing:.12em;color:var(--d17a-pulse);background:rgba(0,184,110,0.08);border:1px solid rgba(0,184,110,0.4);padding:4px 12px;display:flex;align-items:center;gap:8px}
+.live-dot{width:6px;height:6px;background:var(--d17a-pulse);border-radius:50%;animation:blink 1s ease-in-out infinite;display:inline-block}
+.nav-links{display:flex;gap:1.2rem;list-style:none}
+.nav-links a{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;color:var(--gray-light);text-decoration:none;text-transform:uppercase;transition:color .2s;padding-bottom:3px;border-bottom:1px solid transparent}
+.nav-links a:hover,.nav-links a.active{color:var(--d17a-pulse);border-bottom-color:var(--d17a-pulse)}
+@media(max-width:800px){.nav-links{display:none}}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:86px 5vw 4.5rem;position:relative;overflow:hidden;border-bottom:1px solid rgba(204,0,0,0.5)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(204,26,46,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(204,26,46,0.025) 1px,transparent 1px);background-size:52px 52px}
+.hero-glow-main{position:absolute;top:-10%;right:-5%;width:55vw;height:55vw;background:radial-gradient(circle,rgba(0,184,110,0.14) 0%,rgba(0,208,124,0.05) 50%,transparent 70%)}
+.hero-glow-sec{position:absolute;bottom:-5%;left:-5%;width:40vw;height:40vw;background:radial-gradient(circle,rgba(100,60,0,0.12) 0%,transparent 68%)}
+.hero-content{position:relative;z-index:1}
+
+.warning-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(0,184,110,0.65);background:rgba(0,184,110,0.08);padding:6px 16px;font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;color:var(--d17a-pulse);text-transform:uppercase;margin-bottom:1.2rem;animation:warning-flash 1.5s ease-in-out infinite}
+
+.day-timeline{display:flex;align-items:center;gap:0;margin-bottom:2rem;animation:fadeUp .4s ease both;overflow-x:auto;padding-bottom:4px}
+.dt-item{display:flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0}
+.dt-bar{height:4px;width:18px;background:rgba(255,255,255,0.02);border-radius:2px}
+
+.dt-bar.d7acol{background:rgba(232,96,10,0.8);box-shadow:0 0 14px rgba(181,0,0,0.8),0 0 28px rgba(255,32,32,0.4)}
+.dt-dot{width:5px;height:5px;border-radius:50%;background:rgba(113,128,150,0.08);border:1px solid rgba(255,255,255,0.02)}
+
+.dt-dot.d7acol{background:var(--orange);border-color:var(--orange);box-shadow:0 0 18px rgba(255,32,32,0.9);width:16px;height:16px;animation:pulse-glow-hard 1.5s ease-in-out infinite}
+.dt-label{font-family:var(--mono);font-size:.38rem;letter-spacing:.08em;color:rgba(113,128,150,0.15)}
+
+.dt-conn{width:6px;height:2px;background:rgba(255,255,255,0.01);flex-shrink:0;align-self:center;margin-top:-12px}
+
+.hero-title{font-family:var(--display);font-size:clamp(2.8rem,7vw,6.5rem);letter-spacing:.04em;line-height:.95;color:var(--white);margin-bottom:.8rem;animation:fadeUp .5s ease .05s both}
+.hero-title .crisis-word{color:var(--green);animation:deadline-pulse 2s ease-in-out infinite}
+.hero-sub{font-family:var(--body);font-size:clamp(.75rem,1.4vw,1rem);color:rgba(234,232,224,0.7);line-height:1.6;max-width:720px;margin-bottom:2rem;animation:fadeUp .5s ease .1s both;font-weight:300}
+.hero-sub strong{color:var(--orange)}
+.hero-sub .warn{color:var(--orange)}
+
+.hero-stats{display:flex;flex-wrap:wrap;gap:1.5rem;animation:fadeUp .5s ease .15s both;margin-bottom:1.5rem}
+
+.hs-label{font-family:var(--mono);font-size:.5rem;letter-spacing:.14em;color:var(--gray-light);text-transform:uppercase}
+.hs-val{font-family:var(--display);font-size:1.6rem;letter-spacing:.06em;color:var(--white)}
+.hs-val.red{color:var(--orange)}.hs-val.grn{color:var(--green)}.hs-val.warn{color:var(--amber)}
+
+.day-sep{font-family:var(--mono);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,184,110,0.6);background:rgba(0,184,110,0.04);border-top:1px solid rgba(0,184,110,0.15);border-bottom:1px solid rgba(0,184,110,0.08);padding:10px 5vw;margin-top:0}
+.section{padding:3rem 5vw;border-bottom:1px solid rgba(204,0,0,0.06);opacity:0;transition:opacity .5s,transform .5s}
+.section.vis{opacity:1}
+.sec-label{font-family:var(--mono);font-size:.5rem;letter-spacing:.2em;color:rgba(204,0,0,0.5);text-transform:uppercase;margin-bottom:.5rem}
+.sec-title{font-family:var(--display);font-size:clamp(1.4rem,3.5vw,2.4rem);letter-spacing:.06em;color:var(--white);margin-bottom:1.5rem;line-height:1}
+
+.sm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-bottom:2rem}
+.sm-card{background:var(--bg2);border:1px solid rgba(204,0,0,0.1);border-left:3px solid rgba(204,0,0,0.4);padding:1rem 1.2rem}
+.smart-label{font-family:var(--mono);font-size:.55rem;letter-spacing:.12em;color:var(--orange);text-transform:uppercase;margin-bottom:.5rem}
+.smart-val{font-family:var(--display);font-size:1.5rem;color:var(--white);margin-bottom:.25rem}
+.smart-sub{font-family:var(--body);font-size:.75rem;color:var(--gray-light);line-height:1.5}
+.smart-sub .up{color:var(--green)}.smart-sub .dn{color:var(--red)}.smart-sub .warn{color:var(--amber)}
+
+.veredicto-box{background:rgba(181,0,0,0.08);border:1px solid rgba(181,0,0,0.45);border-left:5px solid var(--orange);padding:1.4rem 1.8rem;margin-bottom:2rem;animation:crisis-pulse-bg 3s ease-in-out infinite}
+.veredicto-label{font-family:var(--mono);font-size:.5rem;letter-spacing:.22em;color:var(--orange);text-transform:uppercase;margin-bottom:.5rem}
+.veredicto-text{font-family:var(--cond);font-size:1.1rem;font-weight:700;color:var(--white);letter-spacing:.04em;line-height:1.4}
+.veredicto-text .hot{color:var(--orange)}
+
+.delta-hist-inner{padding:.8rem 1rem}
+
+.geo-card.confirmed{border-left:3px solid var(--green)}
+.geo-card.ormuz{border-left:3px solid var(--orange)}
+.geo-card.ambiguous{border-left:3px solid var(--amber)}
+.geo-card.deadline{border-left:3px solid var(--magenta)}
+.geo-tag{font-family:var(--mono);font-size:.42rem;letter-spacing:.14em;text-transform:uppercase;padding:2px 7px;display:inline-block;margin-bottom:.5rem}
+.geo-tag.conf{background:rgba(0,214,143,0.1);color:var(--green);border:1px solid rgba(0,214,143,0.2)}
+.geo-tag.ormz{background:rgba(181,0,0,0.1);color:var(--orange);border:1px solid rgba(181,0,0,0.3)}
+.geo-tag.amb{background:rgba(240,192,64,0.1);color:var(--yellow);border:1px solid rgba(240,192,64,0.2)}
+.geo-tag.dead{background:rgba(255,45,85,0.12);color:var(--magenta);border:1px solid rgba(255,45,85,0.3)}
+.geo-title{font-family:var(--cond);font-size:.88rem;font-weight:700;letter-spacing:.04em;color:var(--white);margin-bottom:.4rem}
+.geo-body{font-family:var(--body);font-size:.72rem;color:var(--gray-light);line-height:1.5}
+.geo-body .hot{color:var(--orange)}.geo-body .red{color:var(--red)}.geo-body .grn{color:var(--green)}
+
+.red-box{background:rgba(204,0,0,0.06);border:1px solid rgba(204,0,0,0.25);padding:1.2rem 1.4rem;margin-top:1rem}
+.red-box h4{font-family:var(--cond);font-size:.9rem;font-weight:700;letter-spacing:.05em;color:var(--orange);margin-bottom:.5rem;text-transform:uppercase}
+.red-box p{font-family:var(--body);font-size:.75rem;color:var(--gray-light);line-height:1.6}
+.red-box p strong{color:var(--white)}
+
+.poly-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-bottom:1rem}
+.poly-card{background:var(--bg2);border:1px solid rgba(255,255,255,0.04);padding:1rem 1.1rem}
+.poly-label{font-family:var(--mono);font-size:.42rem;letter-spacing:.12em;color:var(--gray-light);text-transform:uppercase;margin-bottom:.4rem}
+.poly-q{font-family:var(--cond);font-size:.82rem;font-weight:700;color:var(--white);margin-bottom:.6rem;line-height:1.3}
+.poly-bar-wrap{height:4px;background:rgba(255,255,255,0.05);border-radius:2px;margin-bottom:.4rem;overflow:hidden}
+.poly-bar-fill{height:100%;border-radius:2px;transition:width .8s ease}
+.poly-bar-fill.high{background:var(--red)}.poly-bar-fill.mid{background:var(--amber)}.poly-bar-fill.low{background:var(--green)}
+.poly-pct{font-family:var(--display);font-size:1.3rem;letter-spacing:.05em;color:var(--white)}
+.poly-pct.high{color:var(--red)}.poly-pct.mid{color:var(--amber)}.poly-pct.grn{color:var(--green)}
+.poly-source{font-family:var(--mono);font-size:.44rem;color:var(--gray-light);margin-top:.4rem;line-height:1.4}
+.poly-vs{font-family:var(--mono);font-size:.42rem;color:rgba(122,17,17,0.55);margin-top:.3rem;padding-top:.3rem;border-top:1px solid rgba(122,17,17,0.12)}
+
+.ctabs{display:flex;gap:0;margin-bottom:1.5rem;border-bottom:1px solid rgba(204,0,0,0.15)}
+.ctab{font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;color:var(--gray-light);background:transparent;border:none;padding:.5rem 1rem;cursor:pointer;text-transform:uppercase;border-bottom:2px solid transparent;transition:all .2s}
+.ctab.active{color:var(--orange);border-bottom-color:var(--orange)}
+.ctab:hover{color:var(--orange)}
+#chartsGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem}
+.ichart-container{background:var(--bg2);border:1px solid rgba(255,255,255,0.04);padding:1.2rem;min-width:0;overflow:hidden}
+.ichart-container.charts-full-width{grid-column:1/-1}
+.ichart-header{display:flex;justify-content:space-between;align-items:flex-start;gap:.6rem;margin-bottom:.8rem;min-width:0}
+.ichart-title{font-family:var(--cond);font-size:.82rem;font-weight:700;letter-spacing:.05em;color:var(--white);margin-bottom:.15rem;word-break:break-word;hyphens:auto;min-width:0}
+.ichart-sub{font-family:var(--mono);font-size:.44rem;color:var(--gray-light);letter-spacing:.06em;white-space:normal;word-break:break-word;line-height:1.4}
+.ichart-vals{text-align:right;flex-shrink:0;max-width:45%}
+.ichart-main-val{font-family:var(--display);font-size:clamp(1rem,4vw,1.5rem);letter-spacing:.06em;word-break:break-all}
+.ichart-delta{font-family:var(--mono);font-size:.44rem;margin-top:.15rem;white-space:normal;word-break:break-word;line-height:1.4}
+.ichart-body{position:relative;min-width:0}
+.ichart-svg-wrap{position:relative;height:130px;background:rgba(0,0,0,0.2);overflow:hidden}
+.crosshair{position:absolute;top:0;bottom:0;width:1px;background:rgba(204,0,0,0.35);pointer-events:none;display:none}
+.crosshair.show{display:block}
+.chart-tooltip{position:absolute;background:rgba(4,2,4,0.96);border:1px solid rgba(204,0,0,0.3);padding:6px 10px;font-family:var(--mono);font-size:.44rem;pointer-events:none;display:none;z-index:10;min-width:110px}
+.chart-tooltip.show{display:block}
+.tt-date{color:var(--orange);letter-spacing:.1em;margin-bottom:4px;text-transform:uppercase}
+.tt-row{display:flex;justify-content:space-between;gap:8px;margin-top:2px}
+.tt-label{color:var(--gray-light)}.tt-val{font-weight:600}
+.ichart-left{min-width:0;flex:1 1 0;overflow:hidden}
+.ichart-narrative{font-family:var(--mono);font-size:.54rem;color:var(--gray-light);line-height:1.55;margin-top:.6rem;letter-spacing:.02em;border-left:2px solid rgba(204,0,0,0.25);padding-left:.8rem;word-break:break-word;overflow-wrap:break-word}
+.ichart-legend{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem}
+.ileg{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:.44rem;color:var(--gray-light);cursor:pointer;padding:2px 6px;border:1px solid rgba(255,255,255,0.04)}
+.ileg-dot{width:8px;height:3px;border-radius:1px}
+.ileg.off{opacity:.3}
+
+.overflow-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.comp-table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:.5rem;letter-spacing:.04em}
+.comp-table th{padding:6px 8px;text-align:center;color:var(--gray-light);border-bottom:1px solid rgba(255,255,255,0.06);font-weight:400;white-space:nowrap;letter-spacing:.1em;font-size:.46rem}
+.comp-table th:first-child{text-align:left}
+.comp-table td{padding:5px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.03);white-space:nowrap}
+.comp-table td:first-child{text-align:left;color:var(--gray-light);font-size:.48rem}
+.td-up{color:var(--green)}.td-dn{color:var(--red)}.td-warn{color:var(--amber)}.td-neu{color:var(--gray-light)}
+.comp-table tr.today-row td{background:rgba(0,184,110,0.06);border-bottom:1px solid rgba(0,184,110,0.18)}
+.comp-table tr.today-row td:first-child{color:var(--d17a-pulse);font-weight:600}
+.comp-table tr:hover td{background:rgba(255,255,255,0.015)}
+
+.sem-counter-totals{display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:1rem}
+.sem-total-badge{font-family:var(--mono);font-size:.54rem;letter-spacing:.12em;padding:4px 12px;border:1px solid;text-transform:uppercase}
+.sem-total-badge.g{color:var(--green);border-color:rgba(0,214,143,0.3);background:rgba(0,214,143,0.05)}
+.sem-total-badge.y{color:var(--amber);border-color:rgba(245,166,35,0.3);background:rgba(245,166,35,0.05)}
+.sem-total-badge.r{color:var(--orange);border-color:rgba(181,0,0,0.3);background:rgba(181,0,0,0.06)}
+.sfbtn-group{display:flex;gap:0;margin-bottom:1.5rem}
+.sfbtn{font-family:var(--mono);font-size:.5rem;letter-spacing:.1em;color:var(--gray-light);background:var(--bg2);border:1px solid rgba(255,255,255,0.06);padding:5px 14px;cursor:pointer;text-transform:uppercase;transition:all .2s}
+.sfbtn.active{color:var(--orange);border-color:rgba(181,0,0,0.4);background:rgba(181,0,0,0.07)}
+.sfbtn:hover{color:var(--orange)}
+#semGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:rgba(212,160,23,0.06)}
+.sem-card{background:var(--bg2);padding:1.2rem 1.3rem;border-left:3px solid transparent;transition:all .2s}
+.sem-card:hover{background:rgba(204,0,0,0.02)}
+.sem-card[data-sem="g"]{border-left-color:var(--green)}
+.sem-card[data-sem="y"]{border-left-color:var(--amber)}
+.sem-card[data-sem="r"]{border-left-color:var(--orange)}
+.sem-badge{font-family:var(--mono);font-size:.46rem;letter-spacing:.14em;margin-bottom:.5rem;text-transform:uppercase}
+.sem-badge.g{color:var(--green)}.sem-badge.y{color:var(--amber)}.sem-badge.r{color:var(--red)}
+.sem-asset{font-family:var(--cond);font-size:.92rem;font-weight:700;letter-spacing:.04em;color:var(--white);margin-bottom:.4rem}
+.sem-just{font-family:var(--body);font-size:.72rem;color:var(--gray-light);line-height:1.5;margin-bottom:.4rem}
+.sem-cond{font-family:var(--mono);font-size:.44rem;color:rgba(204,0,0,0.55);letter-spacing:.06em}
+
+.op-plan-tabs{display:flex;gap:0;margin-bottom:2rem}
+.op-tab{font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;color:var(--gray-light);background:var(--bg2);border:1px solid rgba(255,255,255,0.06);padding:8px 18px;cursor:pointer;text-transform:uppercase;transition:all .2s}
+.op-tab.active{color:var(--orange);border-color:rgba(181,0,0,0.4);background:rgba(181,0,0,0.07)}
+.op-plan-panel{display:none}.op-plan-panel.active{display:block}
+.port-table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:.52rem;min-width:680px}
+.port-table th{padding:7px 10px;text-align:left;color:var(--gray-light);border-bottom:1px solid rgba(255,255,255,0.06);font-weight:400;letter-spacing:.1em;font-size:.46rem}
+.port-table td{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.03);vertical-align:top}
+.port-table tr:hover td{background:rgba(204,0,0,0.03)}
+.port-w{font-family:var(--display);font-size:1.4rem;color:var(--white)}
+.port-ticker{font-family:var(--mono);font-size:.52rem;color:var(--white);font-weight:600;letter-spacing:.06em}
+.port-stop{color:var(--red);font-size:.48rem}
+.port-cat{font-size:.48rem;color:var(--gray-light);line-height:1.5}
+.op-setup{background:var(--bg2);border:1px solid rgba(255,255,255,0.04);margin-bottom:1rem}
+.op-setup-header{display:flex;align-items:center;gap:1rem;padding:.8rem 1rem;border-bottom:1px solid rgba(255,255,255,0.04)}
+.op-setup-num{font-family:var(--display);font-size:1.6rem;color:rgba(0,184,110,0.35);flex-shrink:0;width:40px}
+.op-setup-title{font-family:var(--cond);font-size:.9rem;font-weight:700;letter-spacing:.04em;color:var(--white)}
+.op-setup-body{padding:.8rem 1rem;font-family:var(--body);font-size:.72rem;color:var(--gray-light);line-height:1.6}
+.op-setup-body .num{color:var(--white);font-family:var(--mono)}.op-setup-body .grn{color:var(--green)}.op-setup-body .red{color:var(--red)}.op-setup-body .amb{color:var(--amber)}
+.op-meta{display:flex;flex-wrap:wrap;gap:.5rem;padding:.6rem 1rem;background:rgba(0,0,0,0.2);border-top:1px solid rgba(255,255,255,0.03)}
+.op-meta-item{font-family:var(--mono);font-size:.46rem;display:flex;gap:4px}
+.op-meta-label{color:var(--gray-light)}.op-meta-val{color:var(--white)}
+
+.adv-box{padding:1.4rem 1.6rem;border:1px solid rgba(204,0,0,0.3)}
+.adv-box-header{font-family:var(--mono);font-size:.54rem;letter-spacing:.16em;color:var(--orange);text-transform:uppercase;margin-bottom:.8rem}
+.adv-box p{font-family:var(--body);font-size:.78rem;color:rgba(234,232,224,0.8);line-height:1.65}
+.adv-box p strong{color:var(--white)}.adv-box p .warn{color:var(--orange)}
+
+.footer{padding:2rem 5vw;border-top:1px solid rgba(204,0,0,0.12);background:var(--bg2)}
+.footer-brand{font-family:var(--display);font-size:1.2rem;letter-spacing:.15em;color:rgba(204,0,0,0.3);margin-bottom:.8rem}
+.footer-disclaimer{font-family:var(--mono);font-size:.44rem;color:var(--gray-light);line-height:1.7;margin-bottom:1rem;max-width:720px}
+.footer-nav{display:flex;flex-wrap:wrap;gap:.5rem}
+.footer-nav a{font-family:var(--mono);font-size:.48rem;letter-spacing:.1em;color:var(--gray-light);text-decoration:none;padding:3px 8px;border:1px solid rgba(255,255,255,0.04);text-transform:uppercase;transition:color .2s}
+.footer-nav a:hover{color:var(--orange)}
+
+.discrepancy-box{background:rgba(240,192,64,0.05);border:1px solid rgba(240,192,64,0.25);border-left:4px solid var(--amber);padding:1rem 1.2rem;margin-bottom:1.5rem}
+.discrepancy-box h4{font-family:var(--mono);font-size:.52rem;letter-spacing:.15em;color:var(--amber);text-transform:uppercase;margin-bottom:.5rem}
+.discrepancy-box p{font-family:var(--body);font-size:.72rem;color:var(--gray-light);line-height:1.5}
+
+.stress-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1px;background:rgba(204,0,0,0.1);margin-bottom:2rem}
+.stress-card{background:var(--bg2);padding:1rem;text-align:center}
+.stress-cat{font-family:var(--mono);font-size:.46rem;letter-spacing:.12em;color:var(--gray-light);text-transform:uppercase;margin-bottom:.3rem}
+.stress-score{font-family:var(--display);font-size:2rem;letter-spacing:.04em}
+.stress-score.extreme{color:var(--orange)}.stress-score.high{color:var(--amber)}.stress-score.elevated{color:var(--yellow)}
+.stress-regime{font-family:var(--mono);font-size:.46rem;letter-spacing:.1em;margin-top:.15rem}
+.stress-accel{font-family:var(--mono);font-size:.42rem;color:var(--gray-light);margin-top:.2rem}
+
+@media(min-width:1024px){
+  .sm-card{transition:background .2s,transform .2s,box-shadow .2s}
+  .sm-card:hover{background:rgba(204,0,0,0.04);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.4),0 0 12px rgba(204,0,0,0.08)}
+  .sem-card[data-sem="g"]:hover{background:rgba(0,214,143,0.04);transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.35),0 0 8px rgba(0,214,143,0.05)}
+  .sem-card[data-sem="y"]:hover{background:rgba(245,166,35,0.04);transform:translateY(-2px)}
+  .sem-card[data-sem="r"]:hover{background:rgba(204,0,0,0.06);transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.35),0 0 10px rgba(204,0,0,0.08)}
+
+}
+
+@media(max-width:640px){
+  .hero-stats{gap:1rem}.hs-val{font-size:1.2rem}
+  #chartsGrid{grid-template-columns:1fr}
+
+  .section.vis .sem-card,
+  .ichart-header{flex-direction:column;gap:.4rem}
+  .ichart-vals{text-align:left;max-width:100%}
+  .ichart-main-val{font-size:clamp(1.1rem,6vw,1.6rem)}
+  .ichart-delta{font-size:.44rem;white-space:normal}
+  .ichart-sub{white-space:normal;font-size:.42rem}
+  .ichart-narrative{font-size:.48rem}
+}
+
+.section.vis .sem-card{animation:wr-up .45s ease both}
+.section.vis .sem-card:nth-child(1){animation-delay:0ms}.section.vis .sem-card:nth-child(2){animation-delay:45ms}
+.section.vis .sem-card:nth-child(3){animation-delay:90ms}.section.vis .sem-card:nth-child(4){animation-delay:135ms}
+.section.vis .sem-card:nth-child(5){animation-delay:180ms}.section.vis .sem-card:nth-child(6){animation-delay:225ms}
+.section.vis .sem-card:nth-child(7){animation-delay:270ms}.section.vis .sem-card:nth-child(8){animation-delay:315ms}
+.section.vis .sem-card:nth-child(9){animation-delay:360ms}.section.vis .sem-card:nth-child(10){animation-delay:405ms}
+
+
+.read-est{font-family:var(--mono);font-size:.44rem;color:rgba(212,160,23,0.45);margin-left:auto}
+
+/* utility classes extracted from inline styles */
+.uis1{font-family:var(--mono);font-size:.48rem;color:var(--gray-light);text-decoration:none;padding:3px 8px;border:1px solid rgba(255,255,255,0.04);text-transform:uppercase}
+.uis2{font-family:var(--mono);font-size:.44rem;letter-spacing:.15em;color:var(--gray-light);text-transform:uppercase}
+.uis3{color:var(--d17a-pulse)}
+.uis4{font-family:var(--mono);font-size:.52rem;color:var(--gray-light)}
+.uis5{border-color:rgba(0,184,110,0.2);color:var(--d17a-pulse)}
+.uis6{font-family:var(--mono);font-size:.42rem;color:var(--gray-light);letter-spacing:.1em;margin-bottom:.25rem}
+.uis7{background:rgba(255,107,53,0.05);border:1px solid rgba(255,107,53,0.2);border-left:3px solid var(--orange);padding:.7rem 1rem;font-family:var(--mono);font-size:.56rem;color:rgba(234,232,224,0.9)}
+.uis8{background:rgba(0,184,110,0.05);border:1px solid rgba(0,184,110,0.18);border-left:3px solid var(--d17a-pulse);padding:.7rem 1rem;font-family:var(--mono);font-size:.56rem;color:rgba(234,232,224,0.85)}
+.uis9{font-family:var(--mono);font-size:.55rem;color:var(--green)}
+.uis10{color:var(--d17a-pulse);font-weight:600}
+.uis11{background:var(--bg2);padding:.8rem;text-align:center}
+.uis12{font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--green)}
+.uis13{font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--red)}
+.uis14{font-family:var(--mono);font-size:.55rem;color:var(--amber)}
+.uis15{color:var(--green);font-weight:700}
+
+.uis16{background:rgba(212,160,23,0.05);border:1px solid rgba(212,160,23,0.18);border-left:3px solid var(--red);padding:.7rem 1rem;font-family:var(--mono);font-size:.56rem;color:rgba(234,232,224,0.85)}
+
+/* ── ODDS / MERCADOS DE PREDICCIÓN ─────────────────────────── */
+.odds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:rgba(212,160,23,0.08);margin-bottom:1.5rem}
+.odds-card{background:var(--bg2);padding:1.1rem 1.3rem;border-left:3px solid transparent;position:relative;overflow:hidden}
+.odds-card.geo{border-left-color:var(--orange)}
+.odds-card.energia{border-left-color:rgba(255,45,85,0.7)}
+.odds-card.macro{border-left-color:var(--cyan)}
+.odds-card.activos{border-left-color:var(--green)}
+.odds-card.tasas{border-left-color:var(--violet)}
+.odds-cat{font-family:var(--mono);font-size:.42rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4rem}
+.odds-cat.geo{color:var(--orange)}
+.odds-cat.energia{color:rgba(255,80,80,0.8)}
+.odds-cat.macro{color:var(--cyan)}
+.odds-cat.activos{color:var(--green)}
+.odds-cat.tasas{color:var(--violet)}
+.odds-question{font-family:var(--cond);font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.7rem;line-height:1.25;letter-spacing:.02em}
+.odds-bar-wrap{margin-bottom:.5rem}
+.odds-bar-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.25rem}
+.odds-bar-text{font-family:var(--mono);font-size:.44rem;color:var(--gray-light);letter-spacing:.08em}
+.odds-pct{font-family:var(--display);font-size:1.5rem;letter-spacing:.04em}
+.odds-pct.high{color:var(--green)}
+.odds-pct.mid{color:var(--amber)}
+.odds-pct.low{color:var(--red)}
+.odds-pct.info{color:var(--cyan)}
+.odds-bar{height:5px;background:rgba(255,255,255,0.04);border-radius:3px;overflow:hidden;margin-bottom:.3rem}
+.odds-bar-fill{height:100%;border-radius:3px;transition:width .8s ease}
+.odds-bar-fill.high{background:linear-gradient(90deg,rgba(0,214,143,0.5),var(--green))}
+.odds-bar-fill.mid{background:linear-gradient(90deg,rgba(245,166,35,0.5),var(--amber))}
+.odds-bar-fill.low{background:linear-gradient(90deg,rgba(232,41,63,0.4),var(--red))}
+.odds-bar-fill.info{background:linear-gradient(90deg,rgba(0,188,212,0.4),var(--cyan))}
+.odds-source{font-family:var(--mono);font-size:.4rem;color:rgba(113,128,150,0.5);letter-spacing:.1em;text-transform:uppercase;margin-top:.4rem}
+.odds-note{font-family:var(--body);font-size:.64rem;color:var(--gray-light);line-height:1.45;margin-top:.5rem;border-top:1px solid rgba(255,255,255,0.03);padding-top:.5rem}
+.odds-note strong{color:var(--white)}
+.odds-divergence{background:rgba(0,184,110,0.04);border:1px solid rgba(0,184,110,0.2);border-left:4px solid var(--d17a-pulse);padding:1rem 1.2rem;margin-bottom:1.5rem;font-family:var(--mono);font-size:.54rem;color:var(--gray-light);line-height:1.65}
+.odds-divergence strong{color:var(--d17a-pulse)}
+.odds-platform-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.odds-platform-badge{font-family:var(--mono);font-size:.46rem;letter-spacing:.14em;padding:3px 10px;border:1px solid;text-transform:uppercase}
+.odds-platform-badge.poly{color:rgba(99,179,237,0.8);border-color:rgba(99,179,237,0.25);background:rgba(99,179,237,0.05)}
+.odds-platform-badge.kalshi{color:rgba(154,117,255,0.8);border-color:rgba(154,117,255,0.25);background:rgba(154,117,255,0.05)}
+.odds-two{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.04);margin-bottom:.5rem}
+.odds-two-item{background:var(--bg2);padding:.5rem .7rem;text-align:center}
+.odds-two-label{font-family:var(--mono);font-size:.38rem;color:var(--gray-light);letter-spacing:.1em;margin-bottom:.2rem}
+.odds-two-val{font-family:var(--display);font-size:1.1rem}
+@media(max-width:640px){.odds-grid{grid-template-columns:1fr}}
+</style>
+</head><body><div id="progress-bar"></div><div id="section-dots"><div class="s-dot active" data-target="hero" onclick="scrollToSec('hero')"><span class="s-dot-tip">RESUMEN</span></div><div class="s-dot" data-target="advertencia" onclick="scrollToSec('advertencia')"><span class="s-dot-tip">⚡ VEREDICTO 17A</span></div><div class="s-dot" data-target="stress" onclick="scrollToSec('stress')"><span class="s-dot-tip">Estrés</span></div><div class="s-dot" data-target="polymarket" onclick="scrollToSec('polymarket')"><span class="s-dot-tip">Odds</span></div><div class="s-dot" data-target="geopolitica" onclick="scrollToSec('geopolitica')"><span class="s-dot-tip">Geopolítica</span></div><div class="s-dot" data-target="charts" onclick="scrollToSec('charts')"><span class="s-dot-tip">Gráficos</span></div><div class="s-dot" data-target="delta" onclick="scrollToSec('delta')"><span class="s-dot-tip">Tabla</span></div><div class="s-dot" data-target="semaforo" onclick="scrollToSec('semaforo')"><span class="s-dot-tip">Semáforo</span></div><div class="s-dot" data-target="operativa" onclick="scrollToSec('operativa')"><span class="s-dot-tip">Operativa</span></div></div><div class="crisis-float" style="border-color:rgba(0,184,110,0.55);color:var(--d17a-pulse)">🟢 ATH S&P 7,126 · 13° VERDE · ORMUZ ABRE · WTI −11% · BTC $77K</div><div id="market-pulse"><div class="pulse-label">17A · LIVE</div><div class="pulse-items"><div class="pulse-item"><span class="pulse-ticker">ES1!</span><span class="pulse-val g">7,161</span><span class="pulse-delta up">ATH +1.19%</span></div><div class="pulse-item"><span class="pulse-ticker">WTI</span><span class="pulse-val r">$83.61</span><span class="pulse-delta dn">−11.5% ORMUZ</span></div><div class="pulse-item"><span class="pulse-ticker">XAUUSD</span><span class="pulse-val a">$4,831</span><span class="pulse-delta up">+0.85%</span></div><div class="pulse-item"><span class="pulse-ticker">BTC</span><span class="pulse-val g">$77,470</span><span class="pulse-delta up">+3.08%</span></div><div class="pulse-item"><span class="pulse-ticker">VIX</span><span class="pulse-val g">17.47</span><span class="pulse-delta up">−2.67%</span></div><div class="pulse-item"><span class="pulse-ticker">USD/JPY</span><span class="pulse-val g">158.62</span><span class="pulse-delta up">↓ risk-on</span></div><div class="pulse-item"><span class="pulse-ticker">AMD</span><span class="pulse-val g">+16.4%</span><span class="pulse-delta up">SEMANA</span></div></div><div class="pulse-alert"><span class="live-dot"></span><span id="liveTime"></span> · 13° VERDE NASDAQ</div></div><div class="update-ribbon" style="background:linear-gradient(90deg,rgba(0,184,110,0.28),rgba(0,184,110,0.1),rgba(0,60,30,0.04));border-bottom:1px solid rgba(0,184,110,0.7)"><span class="ribbon-badge" style="background:var(--d17a);color:#000">17 ABR</span><span class="ribbon-text" style="color:rgba(38,208,124,0.9)">IRAN REABRE ORMUZ · S&P ATH 7,126 (+1.20%) · NASDAQ 13° VERDE · WTI −11.5% · BTC $77,470 · INTEL MÁXIMO DESDE 2000 · AMD +16.4% SEMANAL</span><div class="ribbon-days"><span class="rd" style="border-color:rgba(200,160,80,0.2);color:rgba(200,160,80,0.4);font-size:.42rem">14A</span><span class="rd" style="border-color:rgba(26,158,114,0.2);color:rgba(26,158,114,0.4);font-size:.42rem">15A</span><span class="rd" style="border-color:rgba(34,212,154,0.2);color:rgba(34,212,154,0.4);font-size:.42rem">16A</span><span class="rd current" style="border-color:var(--d17a-pulse);color:var(--d17a-pulse);background:rgba(0,184,110,0.14)">17A ▶</span></div></div><nav class="nav"><div class="nav-brand">WAR ROOM</div><div class="nav-badge"><span class="live-dot"></span>17 ABR 21:00 UTC · <span class="read-est" id="readEst"></span></div><ul class="nav-links"><li><a href="#advertencia" data-nav="advertencia">Veredicto</a></li><li><a href="#stress" data-nav="stress">Estrés</a></li><li><a href="#polymarket" data-nav="polymarket">Odds</a></li><li><a href="#charts" data-nav="charts">Gráficos</a></li><li><a href="#delta" data-nav="delta">Tabla</a></li><li><a href="#semaforo" data-nav="semaforo">Semáforo</a></li><li><a href="#operativa" data-nav="operativa">Operativa</a></li></ul></nav><div class="hero" id="hero"><div class="hero-grid"></div><div class="hero-glow-main"></div><div class="hero-glow-sec"></div><div class="hero-content"><div class="warning-badge" style="border-color:rgba(0,184,110,0.65);background:rgba(0,184,110,0.08);color:var(--d17a-pulse)"><span class="live-dot" style="background:var(--d17a-pulse)"></span>
+ 13° VERDE NASDAQ · ORMUZ REABRE · WTI −11% · S&P 7,126 ATH · BTC $77K · 17 ABRIL 2026 · 21:00 UTC
+</div><div class="day-timeline"><div class="dt-item"><div class="dt-bar" style="background:rgba(200,160,80,0.3)"></div><div class="dt-dot" style="background:rgba(200,160,80,0.35);border-color:rgba(200,160,80,0.5);width:7px;height:7px"></div><div class="dt-label" style="color:rgba(200,160,80,0.35);font-size:.4rem">14A</div></div><div class="dt-conn"></div><div class="dt-item"><div class="dt-bar" style="background:rgba(0,154,170,0.35)"></div><div class="dt-dot" style="background:rgba(0,154,170,0.4);border-color:rgba(0,154,170,0.55);width:8px;height:8px"></div><div class="dt-label" style="color:rgba(0,154,170,0.45);font-size:.42rem">15A</div></div><div class="dt-conn"></div><div class="dt-item"><div class="dt-bar" style="background:rgba(26,158,114,0.35)"></div><div class="dt-dot" style="background:rgba(26,158,114,0.4);border-color:rgba(34,212,154,0.6);width:9px;height:9px"></div><div class="dt-label" style="color:rgba(34,212,154,0.5);font-size:.42rem">16A</div></div><div class="dt-conn"></div><div class="dt-item"><div class="dt-bar" style="background:var(--d17a-pulse);box-shadow:0 0 14px rgba(38,208,124,0.7)"></div><div class="dt-dot" style="background:var(--d17a-pulse);border-color:var(--d17a-pulse);box-shadow:0 0 18px rgba(38,208,124,0.8);width:16px;height:16px;animation:pulse-glow-hard 1.5s ease-in-out infinite"></div><div class="dt-label" style="color:var(--d17a-pulse);font-weight:700;font-size:.52rem">17A ▶</div></div></div><div class="hero-title" style="font-family:var(--display);font-size:clamp(2.4rem,7vw,5rem);line-height:.95;letter-spacing:.04em;color:var(--white);margin-bottom:.5rem"><span style="color:var(--d17a-pulse)">13° VERDE</span><br><span style="color:var(--d17a-pulse)">ORMUZ ABRE</span><br><span style="color:var(--green);font-size:clamp(1.4rem,3.5vw,2.8rem)">S&P 7,126 ATH · WTI −11% · BTC $77K</span></div><div class="hero-sub" style="font-family:var(--mono);font-size:clamp(.52rem,1.5vw,.66rem);letter-spacing:.1em;color:var(--gray-light);max-width:760px;line-height:1.7;margin-bottom:2rem">
+ <span style="color:var(--green);font-weight:600">S&P 7,041.28 ATH · Nasdaq 12° jornada verde consecutiva — racha más larga desde julio 2009. +0.36%.</span> Trump anuncia ceasefire Israel-Líbano 10 días a las 17:00 EST. Philly Fed 26.7 vs consenso 10 — shock positivo. Jobless claims 207K, 8K bajo consenso. <span style="color:var(--red);font-weight:600">Precios pagados Philly: 59.3 (+14.6pts) — ALARMA INFLACIONARIA. Irán desmintió anuncio de Trump sobre uranio.</span> <span style="color:var(--d17a-pulse);font-weight:600">TSMC capex $52-56B, ventas +30%. Dell +8.92%. Netflix guidance débil AH.</span>
+ </div><div class="hero-stats" style="display:flex;flex-wrap:wrap;gap:1.5rem 2.5rem"><div class="hs"><div class="hs-label" class="uis2">S&P 500 ATH</div><div class="hs-val" class="uis12">7,126.06</div></div><div class="hs"><div class="hs-label" class="uis2">WTI SPOT</div><div class="hs-val" style="font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--red)">$83.61</div></div><div class="hs"><div class="hs-label" class="uis2">Oro XAUUSD</div><div class="hs-val" style="font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--d17a-pulse)">$4,831</div></div><div class="hs"><div class="hs-label" class="uis2">Bitcoin</div><div class="hs-val" style="font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--green)">$77,470</div></div><div class="hs"><div class="hs-label" class="uis2">VIX · OVX</div><div class="hs-val" style="font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--green)">17.47 · 69</div></div><div class="hs"><div class="hs-label" class="uis2">US 10Y</div><div class="hs-val" style="font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--green)">4.25%</div></div><div class="hs"><div class="hs-label" class="uis2">Semáforo</div><div class="hs-val" style="font-family:var(--display);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--green)">🟢 VERDE</div></div></div></div></div><div class="day-sep" id="advertencia" style="border-color:rgba(0,184,110,0.3);color:var(--d17a-pulse);background:rgba(0,184,110,0.03)">🟢 VEREDICTO 17 ABRIL 2026 · 21:00 UTC · 13° VERDE NASDAQ · ORMUZ ABRE · WTI −11% · S&P 7,126 ATH · SEMÁFORO VERDE</div><section class="section"><div class="sec-label" style="color:var(--d17a-pulse)">Veredicto · 17 Abr 2026</div><h2 class="sec-title">TESIS CENTRAL: ORMUZ ABRE — RISK-ON TOTAL · PERO VENTANA ES DE 10 DÍAS Y EL CGRI CONTROLA EL GRIFO</h2><div class="veredicto-box" style="border:1px solid rgba(0,184,110,0.5);padding:1.5rem 1.8rem;background:linear-gradient(135deg,rgba(0,184,110,0.06),rgba(0,0,0,0))"><div class="veredicto-label" style="font-family:var(--mono);font-size:.52rem;letter-spacing:.16em;color:var(--d17a-pulse);text-transform:uppercase;margin-bottom:.8rem">🟢 VEREDICTO · 17 ABRIL 2026 · 21:00 UTC</div><div class="veredicto-text" style="font-family:var(--body);font-size:.78rem;color:rgba(234,232,224,0.85);line-height:1.7">
+<strong style="color:var(--green)">S&P 7,126.06 ATH (+1.20%) · Nasdaq 13ª verde — racha más larga desde 1992. Dow +869pt. RTY1! +2.13%.</strong> Irán abre Ormuz para buques no militares (ceasefire 10 días, CGRI controla). WTI −11.5% a $83.61. Brent −10.8%. BTC $77,470. Intel máximo desde 2000.</div><div class="veredicto-text" style="font-family:var(--body);font-size:.78rem;color:rgba(234,232,224,0.85);line-height:1.7;margin-top:.8rem">
+<span style="color:var(--amber)"><strong>Lo que el mercado no priceo: la apertura es CONDICIONAL.</strong> Solo buques no militares. Control total del CGRI. Ventana de 10 días (~26A). Bloqueo naval EE.UU. continúa. Irán contradice a Trump en nuclear. IMF cortó PIB global a 3.1%.</span> <strong style="color:var(--d17a-pulse)">Semáforo: 🟢 VERDE — risk-on estructural con cláusula condicional. Ventana de oportunidad, no resolución permanente.</strong></div></div><div style="margin-top:1.5rem;margin-bottom:1.5rem"><div style="font-family:var(--mono);font-size:.52rem;letter-spacing:.16em;color:var(--d17a-pulse);text-transform:uppercase;margin-bottom:.8rem;border-bottom:1px solid rgba(0,184,110,0.2);padding-bottom:.4rem">17A — 6 SEÑALES CRÍTICAS</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:.6rem"><div style="background:rgba(0,184,110,0.05);border:1px solid rgba(0,184,110,0.2);border-left:3px solid var(--d17a-pulse);padding:.7rem 1rem;font-family:var(--mono);font-size:.56rem;color:rgba(234,232,224,0.9)">🚢 ORMUZ ABRE: Araghchi declara "completamente abierto." <strong>Solo buques no militares, CGRI controla acceso, 10 días. ~26A es el nuevo binario.</strong> WTI −11.5%.</div><div class="uis8">📈 13° VERDE NASDAQ: S&P 7,126 ATH, primer cierre sobre 7,100. Russell 2000 +2.13% — mejora amplitud. <strong>Nasdaq Composite: racha más larga desde 1992. +1.28% NQ1!.</strong></div><div class="uis7">₿ BTC $77,470 +3.08%: CoinDesk atribuye el rally explícitamente a la apertura de Ormuz. <strong>DXY 98.2, US10Y 4.25% ↓ — condiciones favorables. Break $78K = señal de aceleración.</strong></div><div class="uis8">🔌 SEMICONDUCTORES: Intel máximo desde 2000 (~$69.55 intraday). AMD +16.4% semanal. <strong>Ciclo AI infra: la demanda de cómputo no depende de Ormuz. Estructuralmente alcista.</strong></div><div class="uis16">☢️ CONTRADICCIÓN NUCLEAR: Trump dijo Irán aceptó "casi todo." <strong>Irán (Mizan): "ninguna negociación sobre transferencia de uranio tuvo lugar." Uno de los dos está mintiendo.</strong></div><div class="uis7">📉 WTI −11% / Brent −10.8%: Brent $88.67 — primer cierre bajo $90 en semanas. <strong>Mercado descontó apertura permanente. Si 26A no extiende → WTI rebota $15-20 en sesiones. OVX aún elevated a 69.</strong></div></div></div><div class="discrepancy-box" style="border-color:rgba(245,166,35,0.35);border-left-color:var(--amber);background:rgba(245,166,35,0.04)"><h4 style="color:var(--amber)">APERTURA CONDICIONAL DE ORMUZ — LO QUE EL PRECIO NO REFLEJA AÚN</h4><p>WTI colapsó −11.5% como si la apertura fuera permanente. <strong style="color:var(--white)">La realidad: CGRI controla el acceso, solo buques no militares, 10 días de ventana. Bloqueo naval EE.UU. activo. IMF cortó PIB 2026 a 3.1%.</strong> <strong style="color:var(--orange)">OVX aún en 69 (elevated). Oil puede rebotar $10-15 si 26A no se extiende. El rally de oil puts es el trade asimétrico del momento.</strong></p></div><div class="sm-grid" style="background:rgba(0,184,110,0.06)"><div class="sm-card"><div class="smart-label">S&P 500 — 13° Verde Consecutivo</div><div class="smart-val" style="color:var(--green)">7,126.06</div><div class="smart-sub">+1.20% · Primer cierre sobre 7,100. Dow +869pt. <span style="color:var(--d17a-pulse)">RTY1! +2.13% — amplitud mejora. S5COND +1.97%, S5INDU +1.82%.</span></div></div><div class="sm-card"><div class="smart-label">WTI — Colapso post-Ormuz</div><div class="smart-val" style="color:var(--red)">$83.61</div><div class="smart-sub">CL1! $82.59 (−12.78%). OVX 69 (elevated). <span style="color:var(--amber)">Apertura condicional: CGRI control, 10d. Riesgo reversión ~26A.</span></div></div><div class="sm-card"><div class="smart-label">Bitcoin — Rally Ormuz</div><div class="smart-val" style="color:var(--green)">$77,470</div><div class="smart-sub">+3.08%. CoinDesk: rally atribuido directamente a Ormuz. <span style="color:var(--d17a-pulse)">Break $78K = aceleración. CLARITY Act en Senado.</span></div></div><div class="sm-card"><div class="smart-label">Intel — Máximo desde 2000</div><div class="smart-val" style="color:var(--green)">$69.55</div><div class="smart-sub">Intraday high más alto desde el año 2000. AMD +16.4% semanal. <span style="color:var(--d17a-pulse)">Ciclo semis AI: imparable.</span></div></div><div class="sm-card"><div class="smart-label">Gold — Multi-week High</div><div class="smart-val" style="color:var(--amber)">$4,831</div><div class="smart-sub">GC1! $4,879 (+1.48%). NO es ATH (máximo $5,589 · 28 ene). <span style="color:var(--gray-light)">Multi-week high. Soporte estructural $4,550.</span></div></div><div class="sm-card"><div class="smart-label">US 10Y — Yields Bajan</div><div class="smart-val" style="color:var(--green)">4.25%</div><div class="smart-sub">−1.55%. US 2Y 3.71% (−1.96%). MOVE 65.7 (−0.30%). <span style="color:var(--d17a-pulse)">Risk-on: yields bajan, equities suben, oil cae.</span></div></div></div></section><div class="day-sep" id="stress" class="uis5">ESTRÉS · 17 ABR · COMMODITIES ↓MEJORA · VIX 17.47 · SKEW 141 · CREDIT 65.8 · OVX 69 ELEVATED</div><section class="section"><div class="sec-label" style="color:var(--d17a-pulse)">Estrés · 17 Abr 2026</div><h2 class="sec-title">STRESS SCORE — 17 ABRIL</h2><div class="stress-grid"><div class="stress-card"><div class="stress-cat">Equities</div><div class="stress-score elevated">45.9</div><div class="stress-regime" style="color:var(--yellow)">ELEVATED · ATH</div><div class="stress-accel">RTY1! +2.13% · amplitud ↑</div></div><div class="stress-card"><div class="stress-cat">Bonds</div><div class="stress-score elevated">20.6</div><div class="stress-regime" style="color:var(--yellow)">NORMAL</div><div class="stress-accel">MOVE 65.7 ↓ · 10Y 4.25%</div></div><div class="stress-card" style="border:1px solid rgba(255,107,53,0.3);background:rgba(255,107,53,0.05)"><div class="stress-cat">Tail Risk</div><div class="stress-score extreme">81.5</div><div class="stress-regime" style="color:var(--orange)">🔴 EXTREME</div><div class="stress-accel">SKEW 141 · CGRI controla</div></div><div class="stress-card"><div class="stress-cat">Commodities</div><div class="stress-score extreme">90.4</div><div class="stress-regime" style="color:var(--amber)">🔥 HOTSPOT</div><div class="stress-accel">WTI −11% · OVX 69</div></div><div class="stress-card"><div class="stress-cat">Crypto</div><div class="stress-score elevated">31.4</div><div class="stress-regime" style="color:var(--yellow)">ELEVATED</div><div class="stress-accel">BTC $77,470 +3.08%</div></div></div><div style="margin-top:1rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,184,110,0.12)"><div class="uis11"><div class="uis6">CREDIT HEALTH</div><div style="font-family:var(--display);font-size:1.8rem;color:var(--green)">65.8</div><div style="font-family:var(--mono);font-size:.42rem;color:var(--green)">↑ vs 58.1 sem-1</div></div><div class="uis11"><div class="uis6">SYS. LIQUIDITY</div><div style="font-family:var(--display);font-size:1.8rem;color:var(--green)">64.2</div><div style="font-family:var(--mono);font-size:.42rem;color:var(--green)">↑ vs 44.6 sem-1</div></div><div class="uis11"><div class="uis6">TRANSMISSION</div><div style="font-family:var(--display);font-size:1.8rem;color:var(--red)">9.6</div><div style="font-family:var(--mono);font-size:.42rem;color:var(--red)">⚠️ CONTAGIO ACTIVO</div></div></div><div style="margin-top:.6rem;background:rgba(0,184,110,0.04);border:1px solid rgba(0,184,110,0.2);padding:.7rem 1rem;font-family:var(--mono);font-size:.52rem;color:var(--gray-light);line-height:1.55"><span style="color:var(--d17a-pulse)">VIX 17.47 · SKEW 141.82 · OVX 69 · MOVE 65.7 · GVZ 28.95 · HY spread 2.86%</span> · Put/Call Ratio 0.56 (−16.4% → extremo bullish) · CPC bajo = euforia · <strong style="color:var(--amber)">⚠️ OVX 69 y SKEW 141 — el mercado paga cola ante posible reversión del 26A. Tail risk sigue elevado aunque VIX baja.</strong></div></section>
+<div class="day-sep" id="polymarket" style="border-color:rgba(0,184,110,0.2);color:var(--d17a-pulse)">APUESTAS · 17 ABR · POLYMARKET + KALSHI · ORMUZ ABRE · FED HOLD 99% · PAZ IRANÍ 77% · WTI &lt;$85: 86%</div>
+<section class="section">
+<div class="sec-label" style="color:var(--d17a-pulse)">Odds · 17 Abr 2026</div>
+<h2 class="sec-title">MERCADOS DE PREDICCIÓN — 17 ABRIL</h2>
+<p style="font-family:var(--mono);font-size:.58rem;color:var(--gray-light);letter-spacing:.06em;margin-bottom:1rem">Polymarket y Kalshi como termómetro del consenso real. <span style="color:var(--d17a-pulse)">Acuerdo paz permanente EE.UU.-Irán: 77% antes del 30/6. Tráfico Ormuz normal en abril: No 53% — el mercado cree que NO vuelve a la normalidad todavía.</span></p>
+
+<div class="odds-divergence">
+<strong>SEÑAL CLAVE DEL DÍA:</strong> WTI cayó −11.5% como si la apertura fuera permanente. <strong>Polymarket: Ormuz vuelve a la normalidad en ABRIL = No 53%.</strong> El mercado de acciones descuenta resolución total. El de predicciones dice: parcial, condicional. El gap entre ambas lecturas es el trade.
+</div>
+
+<div class="odds-platform-row">
+<span class="odds-platform-badge poly">● Polymarket</span>
+<span class="odds-platform-badge kalshi">● Kalshi</span>
+<span style="font-family:var(--mono);font-size:.42rem;color:rgba(113,128,150,0.4);letter-spacing:.1em;align-self:center">DATOS AL CIERRE 17 ABR 21:00 UTC</span>
+</div>
+
+<div class="odds-grid">
+
+<div class="odds-card macro">
+<div class="odds-cat macro">🏦 Fed / Tasas</div>
+<div class="odds-question">¿Sin cambio en tasas Fed — abril 29?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad HOLD</span>
+<span class="odds-pct high">99%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill high" style="width:99%"></div></div>
+</div>
+<div class="odds-two"><div class="odds-two-item"><div class="odds-two-label">Polymarket</div><div class="odds-two-val" style="color:var(--green)">99%</div></div><div class="odds-two-item"><div class="odds-two-label">Kalshi</div><div class="odds-two-val" style="color:var(--green)">99%</div></div></div>
+<div class="odds-source">Polymarket + Kalshi · Fed April 29 Meeting</div>
+<div class="odds-note">CPI 3.3% bloquea el corte. GDP 0.7% bloquea el alza. <strong>Fed paralizado. 40% prob. de CERO cortes en 2026. Warsh (más hawkish) en confirmación.</strong></div>
+</div>
+
+<div class="odds-card riesgo" style="border-left-color:var(--violet)">
+<div class="odds-cat geo">☮️ Geopolítico</div>
+<div class="odds-question">¿Ceasefire EE.UU.–Irán se extiende post-22 abril?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad extensión</span>
+<span class="odds-pct high">87%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill high" style="width:87%"></div></div>
+</div>
+<div class="odds-source">Polymarket · Iran Ceasefire Extended Apr 22</div>
+<div class="odds-note">Mercado descuenta resolución parcial — NO total. <strong>Irán desmintió hoy el anuncio de Trump. El 13% de NO extensión puede mover oro +$200 y SPX −5% en horas.</strong></div>
+</div>
+
+<div class="odds-card macro">
+<div class="odds-cat macro">🚢 Ormuz — Normalidad Abril</div>
+<div class="odds-question">¿Tráfico en Ormuz vuelve a la normalidad en ABRIL?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad YES</span>
+<span class="odds-pct low">47%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill low" style="width:47%"></div></div>
+</div>
+<div class="odds-source">Polymarket · Hormuz Traffic April 2026</div>
+<div class="odds-note">El mercado de acciones priceó normalidad total (WTI −11%). <strong>Polymarket dice NO 53%. Gap es el trade: oil puts o calls OTM para rebote ~26A si no extiende.</strong></div>
+</div>
+
+<div class="odds-card energia">
+<div class="odds-cat energia">🛢️ Energía</div>
+<div class="odds-question">¿WTI por debajo de $85 en abril?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad YES</span>
+<span class="odds-pct high">86%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill high" style="width:86%"></div></div>
+</div>
+<div class="odds-source">Polymarket · WTI Below $85 April 2026</div>
+<div class="odds-note">WTI spot $83.61 — ya debajo de $85. CL1! $82.59. <strong>Mercado descuenta que no rebota. Riesgo asimétrico: si 26A no extiende o contradicción nuclear cobra cobertura → WTI +$10-15 inmediato.</strong></div>
+</div>
+
+<div class="odds-card geo">
+<div class="odds-cat geo">☮️ Geopolítica</div>
+<div class="odds-question">¿Acuerdo paz permanente EE.UU.–Irán antes del 30/06?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad YES</span>
+<span class="odds-pct high">77%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill high" style="width:77%"></div></div>
+</div>
+<div class="odds-source">Polymarket · US-Iran Peace Deal H1 2026 · $14M vol</div>
+<div class="odds-note">Trump anuncia fin ops vs Irán: 87% antes del 30/6. Islamabad talks probable este fin de semana. <strong>Contradicción nuclear = riesgo. Irán: "no hubo negociación sobre uranio."</strong></div>
+</div>
+
+<div class="odds-card activos">
+<div class="odds-cat activos">📊 Activos 2026</div>
+<div class="odds-question">¿Mejor asset del año: Gold vs BTC vs S&P?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Oro gana 2026</span>
+<span class="odds-pct mid">55%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill mid" style="width:55%"></div></div>
+</div>
+<div class="odds-two">
+<div class="odds-two-item"><div class="odds-two-label">Bitcoin</div><div class="odds-two-val" style="color:var(--amber)">32%</div></div>
+<div class="odds-two-item"><div class="odds-two-label">S&P 500</div><div class="odds-two-val" style="color:var(--gray-light)">13%</div></div>
+</div>
+<div class="odds-source">Polymarket · Best Asset of 2026 Annual</div>
+<div class="odds-note">$4,831 (multi-week high, NO ATH — máximo real $5,589 · 28 ene). <strong>Ceasefire extendido: gold puede ceder $200-300. Re-escalada o ruptura nuclear: gold $5,000+. OVX 69 = hedging aún activo.</strong></div>
+</div>
+
+<div class="odds-card geo">
+<div class="odds-cat geo">⚔️ Geopolítico</div>
+<div class="odds-question">¿Fin del conflicto Irán × Israel/EE.UU. antes del 31/12?</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad YES</span>
+<span class="odds-pct high">98%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill high" style="width:98%"></div></div>
+</div>
+<div class="odds-source">Polymarket · Iran Conflict Ends 2026 · $44M vol</div>
+<div class="odds-note">Ormuz abierto. Ceasefire activo. Islamabad talks probable sábado/domingo. <strong>~26A: vencimiento. Extensión = risk-on sostenido. No extensión = reversión violenta.</strong></div>
+</div>
+
+<div class="odds-card energia">
+<div class="odds-cat energia">🛢️ Energía</div>
+<div class="odds-question">¿WTI por debajo de $90 en abril? (ya resuelto)</div>
+<div class="odds-bar-wrap">
+<div class="odds-bar-label">
+<span class="odds-bar-text">Probabilidad YES</span>
+<span class="odds-pct high">100%</span>
+</div>
+<div class="odds-bar"><div class="odds-bar-fill high" style="width:100%"></div></div>
+</div>
+<div class="odds-source">Polymarket · WTI Below $90 April · RESUELTO · $36M vol</div>
+<div class="odds-note">WTI spot $83.61 · CL1! $82.59. <strong>El mercado que tenía el YES en 58% ayer ahora cerró 100%. Los que compraron la tesis de Ormuz ganaron 1.7x en días.</strong></div>
+</div>
+
+</div>
+
+<div style="margin-top:.5rem;background:rgba(0,184,110,0.04);border:1px solid rgba(0,184,110,0.15);padding:.9rem 1.1rem">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.15em;color:var(--d17a-pulse);text-transform:uppercase;margin-bottom:.6rem">LECTURA INTEGRADA — EL GAP ENTRE PRECIO Y REALIDAD ES EL TRADE</div>
+<div style="font-family:var(--body);font-size:.72rem;color:var(--gray-light);line-height:1.65">
+Risk-on estructural: Ormuz abre + ATH + WTI −11% + BTC $77K. <span style="color:var(--d17a-pulse);font-weight:600">Pero: apertura CONDICIONAL (CGRI, 10d). Ormuz normal en abril = No 53%. Irán contradice nuclear. Binario ~26A es el nuevo vértice del ciclo.</span>
+</div>
+</div>
+</section>
+
+
+<div class="day-sep" id="geopolitica" style="border-color:rgba(26,158,114,0.2);color:var(--d17a-pulse)">GEOPOLÍTICA · 16 ABR · CEASEFIRE ISR-LBN 10D · IRÁN DESMIENTE TRUMP · BLOQUEO NAVAL ACTIVO · 22A BINARIO</div>
+<section class="section">
+<div class="sec-label" style="color:var(--d17a-pulse)">Geopolítica · 16 Abr 2026</div>
+<h2 class="sec-title">TABLERO REAL — CEASEFIRE PARCIAL · CONTRADICCIÓN NARRATIVA · SEMANA DEL 22A</h2>
+<div class="odds-grid">
+<div class="odds-card geo"><div class="odds-cat geo" style="color:var(--green)">☮️ Ceasefire Israel-Líbano</div><div class="odds-question">10 Días · Anuncio Trump 17:00 EST · En Vigor 21:00 GMT</div><div class="odds-note"><strong>Trump anuncia ceasefire ISR-LBN 10 días.</strong> Israel insiste en que ops contra Hezbollah no están cubiertas. Irán insiste en lo contrario. <strong>Reduce cola extrema — NO resuelve el conflicto.</strong></div></div>
+<div class="odds-card geo"><div class="odds-cat geo" style="color:var(--red)">⚛️ Contradicción Nuclear</div><div class="odds-question">Irán Desmiente a Trump sobre Uranio Enriquecido</div><div class="odds-note">Trump: Irán aceptó entregar uranio enriquecido. <strong>Irán desmintió: "otra mentira."</strong> El mercado procesó la versión de Trump. Si el desmentido cobra cobertura → reversión en oil y gold.</div></div>
+<div class="odds-card geo"><div class="odds-cat geo" style="color:var(--orange)">🚢 Bloqueo Naval EE.UU.</div><div class="odds-question">Bloqueo Formal a Puertos Iraníes — Iniciado 14 Abril</div><div class="odds-note">Bloqueo naval EE.UU. desde 14/4. <strong>10M bbl/día afectados.</strong> Nudos irresueltos: nuclear, Ormuz, Israel-Líbano.</div></div>
+<div class="odds-card geo"><div class="odds-cat geo" style="color:var(--cyan)">📅 Binario del 22 Abril</div><div class="odds-question">Ceasefire EE.UU.–Irán Expira · La Semana Que Viene</div><div class="odds-note"><strong>22A: extensión = risk-on, oil/gold down. No extensión = escenario inverso agresivo.</strong> Alcoa esta noche. Fed speakers post-Philly 59.3. CLARITY Act en Senado.</div></div>
+</div>
+<div style="margin-top:.5rem"><div style="font-family:var(--mono);font-size:.48rem;letter-spacing:.16em;color:var(--d17a-pulse);text-transform:uppercase;margin-bottom:.6rem;border-bottom:1px solid rgba(0,184,110,0.15);padding-bottom:.3rem">CONFLICTOS EXPLÍCITOS · 17 ABR</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.5rem">
+<div class="discrepancy-box" style="margin:0"><h4>WTI −11% vs Ormuz "condicional" — Gap de Precio</h4><p>El precio descontó apertura permanente. La realidad: CGRI controla, 10 días, solo no-militares. Polymarket: Ormuz normal en abril = No 53%. Oil put trade asimétrico si ~26A no extiende.</p></div>
+<div class="discrepancy-box" style="margin:0"><h4>Trump: "acordó casi todo" vs Irán: "ninguna negociación sobre uranio"</h4><p>La contradicción es estructural. IMF cortó PIB global a 3.1% en reuniones de primavera. Si Islamabad falla → cola de escalada se reactiva inmediatamente.</p></div>
+<div class="discrepancy-box" style="margin:0"><h4>Bloqueo naval EE.UU. + Ormuz abierto — Paradoja operacional</h4><p>Trump: bloqueo "permanece hasta acuerdo 100%." Buques no militares pueden pasar Ormuz pero no llegar a puertos iraníes bloqueados por EE.UU. Flujo real de petróleo iraní aún limitado.</p></div>
+</div></div>
+</section>
+<div class="day-sep" id="charts" class="uis5">GRÁFICOS INTERACTIVOS · 14A → 17A · 4 SESIONES · HOVER PARA DETALLES</div><section class="section"><div class="sec-label" class="uis3">Gráficos · 14A → 17A</div><h2 class="sec-title">GRÁFICOS INTERACTIVOS — 14A AL 17A</h2><div class="ctab-group"><button class="ctab active" onclick="filterCharts('all',this)">Todos</button><button class="ctab" onclick="filterCharts('energia',this)">Energía</button><button class="ctab" onclick="filterCharts('riesgo',this)">Riesgo/Vol</button><button class="ctab" onclick="filterCharts('macro',this)">Macro/FX</button><button class="ctab" onclick="filterCharts('rates',this)">Tasas</button></div><div id="chartsGrid"></div></section><div class="day-sep" id="delta" class="uis5">TABLA COMPLETA — 14 → 17 ABRIL · 4 SESIONES · 13° VERDE · ORMUZ ABRE</div><section class="section"><div class="sec-label" class="uis3">Histórico · 14A → 17A · 4 sesiones</div><h2 class="sec-title">TABLA COMPLETA — 14A AL 17A</h2><p style="font-family:var(--mono);font-size:.56rem;color:var(--gray-light);letter-spacing:.06em;margin-bottom:.8rem">14A → 17A. <span class="uis3">17A = ORMUZ ABRE · WTI −11% · S&P 7,126 ATH · 13° VERDE NASDAQ · BTC $77,470 · INTEL MÁXIMO DESDE 2000.</span></p><div class="overflow-x"><table class="comp-table"><thead><tr><th style="text-align:left">Activo</th><th style="color:rgba(200,160,80,0.5);font-size:.42rem">14A</th><th style="color:rgba(0,154,170,0.65);font-size:.44rem">15A</th><th style="color:rgba(34,212,154,0.65);font-size:.46rem">16A</th><th style="color:var(--d17a-pulse);font-size:.54rem;font-weight:700">17A ◀</th></tr></thead><tbody><tr class="today-row"><td>S&P 500</td><td>7,004</td><td>7,022.95</td><td style="color:rgba(34,212,154,0.7)">7,041.28</td><td class="uis15">7,126.06 ATH</td></tr><tr><td>VIX</td><td>18.5</td><td>18.36</td><td style="color:rgba(34,212,154,0.7)">~18.0</td><td style="color:var(--green)">17.47 ↓</td></tr><tr class="today-row"><td>SKEW</td><td>156.93</td><td>149.94</td><td style="color:rgba(34,212,154,0.7)">~140</td><td style="color:var(--amber)">141.82</td></tr><tr><td>WTI CL1!</td><td>$91.28</td><td>~$92</td><td style="color:rgba(34,212,154,0.7)">$94.69</td><td style="color:var(--red)">$82.59 −12.78%</td></tr><tr><td>Brent BRN1!</td><td>$95.0</td><td>~$94.93</td><td style="color:rgba(34,212,154,0.7)">~$96</td><td style="color:var(--red)">$90.38 −9.07%</td></tr><tr class="today-row"><td>Oro XAU</td><td>$4,841</td><td>$4,800.7</td><td style="color:rgba(34,212,154,0.7)">$4,828</td><td style="color:var(--d17a-pulse)">$4,831 +0.85%</td></tr><tr><td>DXY</td><td>98.05</td><td>98.05</td><td style="color:rgba(34,212,154,0.7)">~97.5</td><td style="color:var(--amber)">98.226 +0.05%</td></tr><tr><td>US 2Y</td><td>3.761%</td><td>3.761%</td><td style="color:rgba(34,212,154,0.7)">~3.72%</td><td style="color:var(--green)">3.706% ↓</td></tr><tr><td>US 10Y</td><td>4.281%</td><td>4.281%</td><td style="color:rgba(34,212,154,0.7)">~4.33%</td><td style="color:var(--green)">4.248% ↓</td></tr><tr class="today-row"><td>BTC</td><td>$74,954</td><td>$74,954</td><td style="color:rgba(34,212,154,0.7)">~$74,750</td><td class="uis15">$77,470 +3.08%</td></tr><tr><td>OVX</td><td>75.35</td><td>75.35</td><td style="color:rgba(34,212,154,0.7)">~72</td><td style="color:var(--amber)">69.01 −5.52%</td></tr><tr><td>EUR/USD</td><td>~1.176</td><td>~1.177</td><td style="color:rgba(34,212,154,0.7)">~1.18</td><td style="color:var(--amber)">1.17638 −0.16%</td></tr></tbody></table></div></section><div class="day-sep" id="semaforo" class="uis5">SEMÁFORO · 17 ABRIL 2026 · 13° VERDE · ORMUZ ABRE · WTI −11% · 🟢 VERDE CONDICIONAL</div><section class="section"><div class="sec-label" class="uis3">Semáforo · 17 Abr 2026</div><h2 class="sec-title">SEMÁFORO — 17 ABRIL 2026</h2><p style="font-family:var(--mono);font-size:.62rem;color:var(--gray-light);letter-spacing:.06em;margin-bottom:1rem"><span class="uis3">S&P 7,126 ATH (+1.20%), 13° verde. Ormuz abre condicionalmente. WTI −11%. BTC $77,470. Russell 2000 +2.13% — mejora amplitud. Oil energy sector único en rojo (−2.94%). Apertura CGRI-controlada, vence ~26A. 🟢 VERDE CONDICIONAL — risk-on con fecha de vencimiento.</span></p><div class="sem-counter-totals" id="semCounters"><div class="sem-total-badge g">● VERDE <span id="cnt-g"></span></div><div class="sem-total-badge y">● AMARILLO <span id="cnt-y"></span></div><div class="sem-total-badge r">● ROJO <span id="cnt-r"></span></div></div><div class="sfbtn-group"><button class="sfbtn active" onclick="filterSem('all',this)">Todos <span id="cnt-all"></span></button><button class="sfbtn" onclick="filterSem('g',this)">Verde</button><button class="sfbtn" onclick="filterSem('y',this)">Amarillo</button><button class="sfbtn" onclick="filterSem('r',this)">Rojo</button></div><div id="semGrid"><div class="sem-card" data-sem="g"><div class="sem-badge g">● VERDE</div><div class="sem-asset">Oro · GLD · XAUUSD · GC1!</div><div class="sem-just">$4,831 / GC1! $4,879. Central bank demand. Oil baja pero GVZ 28.95 — el mercado aún paga cobertura. Apertura Ormuz no resuelve nuclear: soporte estructural intacto.</div><div class="sem-cond">Target: $5,000-5,200. Stop: $4,550. Reducir solo si acuerdo nuclear VERIFICADO.</div></div><div class="sem-card" data-sem="g"><div class="sem-badge g">● VERDE</div><div class="sem-asset">AI Infra · NVDA · AVGO · TSMC · Intel · AMD</div><div class="sem-just">Intel máximo desde 2000. AMD +16.4% semanal. TSMC capex $52-56B, ventas +30%. Ciclo AI infra es multianual e inelástico a geopolítica. NVDA reporta en mayo.</div><div class="sem-cond">Target: +15-20% próximo ciclo earnings. Stop: −8%. R/R 2.5:1.</div></div><div class="sem-card" data-sem="g"><div class="sem-badge g">● VERDE</div><div class="sem-asset">Banca Inversión · GS · MS · BAC · JPM</div><div class="sem-just">Earnings season sólida. VIX 17.47 pero SKEW 141 = fees de opciones activos. NIM sweet spot. S&P Financials +0.75% en el día.</div><div class="sem-cond">Stop: −8%. Monitorear Q2 guidance calls.</div></div><div class="sem-card" data-sem="g"><div class="sem-badge g">● VERDE</div><div class="sem-asset">Treasuries 2Y · SHY · SGOV</div><div class="sem-just">US 2Y 3.706% (−1.96%). Fed on hold. Oil baja → inflación mejora levemente. Put/Call Ratio 0.56 (−16.4%) = euforia → señal de carry seguro en tramo corto.</div><div class="sem-cond">15% portafolio. Target: carry. Stop: N/A.</div></div><div class="sem-card" data-sem="y"><div class="sem-badge y">● AMARILLO</div><div class="sem-asset">S&P 500 · SPY · ES1!</div><div class="sem-just">ATH 7,126. 13° verde. RTY1! +2.13% — amplitud mejorando. S5COND +1.97%, S5INDU +1.82%. PERO Put/Call 0.56 (−16%) = euforia extrema. CPC bajo históricamente precede reversiones.</div><div class="sem-cond">Máx 10% portafolio. Stop: −3%. Vigilar ~26A expiración ceasefire.</div></div><div class="sem-card" data-sem="y"><div class="sem-badge y">● AMARILLO</div><div class="sem-asset">WTI Oil Puts / Rebote · CL1! · OVX</div><div class="sem-just">WTI $82.59. OVX 69 (elevated). Si ~26A no extiende → WTI rebota $10-15 inmediato. Oil puts a precios actuales son baratos. Asimetría: pérdida prima / ganancia 5-10x si Ormuz cierra.</div><div class="sem-cond">⚠️ Calls OTM $90-95 venc. 30A, 3-5% portafolio. No short direccional en oil — riesgo reversión agresivo.</div></div><div class="sem-card" data-sem="y"><div class="sem-badge y">● AMARILLO</div><div class="sem-asset">Bitcoin · BTC/USDT</div><div class="sem-just">$77,470 (+3.08%). Rally atribuido directamente a Ormuz (CoinDesk). DXY 98.2 — neutral. CLARITY Act en Senado. Debasement monetario intacto. Break $78K = señal de aceleración.</div><div class="sem-cond">Hold. No leverage. Stop: $74K (soporte). CLARITY Act es catalizador clave del sector Q2.</div></div><div class="sem-card" data-sem="y"><div class="sem-badge y">● AMARILLO</div><div class="sem-asset">USD/JPY · Watch 158.60</div><div class="sem-just">USDJPY 158.616 (−0.33%). Risk-on → yen se aprecia levemente. Diferencial tasas aún amplio. BoJ: reunión 28/4. <strong>RIESGO:</strong> break 157 = intervención potencial. Carry sigue positivo pero margen de seguridad menor.</div><div class="sem-cond">⚠️ Hold si largo desde 159. Stop: 157.00. Target: 160.50. Size mínimo — reversión puede ser de 3-5 figuras.</div></div><div class="sem-card" data-sem="r"><div class="sem-badge r">● ROJO</div><div class="sem-asset">EUR/USD · Vigencia Short</div><div class="sem-just">EUR/USD 1.17638 (−0.16%). Superávit UE-EE.UU. cayó 60% (Eurostat). IP europea débil. BCE más dovish que Fed. Oil baja → IPC euro puede bajar → BCE más dovish. Divergencia insostenible.</div><div class="sem-cond">⛔ Entry: 1.18. Stop: 1.20. Target: 1.14-1.15. R/R 2.5:1.</div></div><div class="sem-card" data-sem="r"><div class="sem-badge r">● ROJO</div><div class="sem-asset">Real Estate · REITS · Homebuilders</div><div class="sem-just">Tasas hipotecarias 30Y: 6.37%. Mercado inmobiliario en parálisis. Sin catalizador estructural con rates elevados.</div><div class="sem-cond">⛔ STOP. Alejarse completamente.</div></div><div class="sem-card" data-sem="r"><div class="sem-badge r">● ROJO</div><div class="sem-asset">XLE · Energy Stocks · Upstream</div><div class="sem-just">S&P Energy −2.94% — único sector en rojo. WTI −11%. Si Ormuz se extiende, los upstream E&P son los más golpeados. Reducción de márgenes sistémica en un entorno de petróleo sub-$85.</div><div class="sem-cond">⛔ STOP o corto táctico. Cubrir si ~26A falla (WTI rebota). Target: XLE −5-8% adicional si Ormuz estabiliza.</div></div><div class="sem-card" data-sem="r"><div class="sem-badge r">● ROJO</div><div class="sem-asset">Bonos Largos · TLT · US30Y</div><div class="sem-just">US 30Y 4.885% (−1.01%). Oil baja → inflación mejora → leve rally en bonds. Pero: 5Y5Y 2.16%, SKEW 141 — el mercado no cree en ancla de inflación. OVX 69 + CGRI controla Ormuz = cola aún activa.</div><div class="sem-cond">⛔ No duration. Tramo corto (2Y, 3.706%). Si ~26A extiende Y acuerdo nuclear verificado: revisar.</div></div></div></section><div class="day-sep" id="operativa" class="uis5">PLAN OPERATIVO · 17 ABRIL 2026 · ORMUZ ABRE · 5 SETUPS ACTIVOS · BINARIO DEL ~26A</div><section class="section"><div class="sec-label" class="uis3">Operativa · 17 Abr 2026</div><h2 class="sec-title">PLAN OPERATIVO — 17 ABRIL 2026</h2><div class="op-plan-tabs"><button class="op-tab active" onclick="switchPlan('planA',this)">Plan A · Moderado</button><button class="op-tab" onclick="switchPlan('planB',this)">Plan B · Ultra Agresivo</button></div><div id="planA" class="op-plan-panel active"><h3 style="font-family:var(--cond);font-size:.9rem;font-weight:700;letter-spacing:.1em;color:var(--d17a-pulse);text-transform:uppercase;margin-bottom:1.2rem">Plan A — Moderado · Portfolio Estructurado · Horizonte 2-6 Meses · Post-Ormuz</h3><div class="overflow-x"><table class="port-table"><thead><tr><th>Peso</th><th>Activo</th><th>Entrada</th><th>Stop</th><th>Target</th><th>Rationale</th></tr></thead><tbody><tr><td><div class="port-w">25%</div></td><td><div class="port-ticker">Oro · GLD · GC1!</div></td><td style="font-family:var(--mono);font-size:.55rem;color:var(--d17a-pulse)">Mercado $4,831</td><td class="port-stop">$4,550</td><td class="uis4">$5,000-5,200</td><td class="port-cat">Central bank demand + GVZ 28.95. Nuclear no resuelto. Soporte estructural.</td></tr><tr><td><div class="port-w">20%</div></td><td><div class="port-ticker">AI Semis · NVDA · AVGO · AMD · INTC</div></td><td class="uis9">Mercado</td><td class="port-stop">−8% x posición</td><td class="uis4">Estructural</td><td class="port-cat">Intel máximo desde 2000. AMD +16.4% semanal. TSMC +30%. Ciclo capex AI.</td></tr><tr><td><div class="port-w">15%</div></td><td><div class="port-ticker">Banca Inversión · GS · MS · JPM</div></td><td class="uis9">Mercado</td><td class="port-stop">−8%</td><td class="uis4">Momentum</td><td class="port-cat">Earnings season sólida. SKEW 141 = fees activos. NIM sweet spot.</td></tr><tr><td><div class="port-w">15%</div></td><td><div class="port-ticker">Treasuries 2Y · SHY · T-Bill</div></td><td class="uis9">3.706% yield</td><td class="port-stop">N/A</td><td class="uis4">Carry</td><td class="port-cat">Fed on hold. US2Y −1.96%. Sin riesgo duración.</td></tr><tr><td><div class="port-w">15%</div></td><td><div class="port-ticker">Cash · Money Market · SOFR</div></td><td style="font-family:var(--mono);font-size:.55rem;color:var(--gray-light)">3.67%</td><td class="port-stop">N/A</td><td class="uis4">Preservación</td><td class="port-cat">Preservación capital. Binario ~26A. Liquidez para reentrada.</td></tr><tr><td><div class="port-w">5%</div></td><td><div class="port-ticker">WTI Calls OTM · $90-95 · 30A</div></td><td class="uis14">Prima ~$1-2</td><td class="port-stop">Prima total</td><td class="uis4">5-10x prima</td><td class="port-cat">Rebote si ~26A falla. OVX 69 = primas aún razonables.</td></tr><tr><td><div class="port-w">5%</div></td><td><div class="port-ticker">Bitcoin · BTCUSDT</div></td><td class="uis14">$77,470</td><td class="port-stop">$74,000</td><td class="uis4">$82-85K</td><td class="port-cat">Rally Ormuz. CLARITY Act. Break $78K = aceleración. No leverage.</td></tr></tbody></table></div><div style="margin-top:1rem;font-family:var(--mono);font-size:.54rem;color:var(--gray-light);line-height:1.7;background:rgba(0,154,170,0.03);border:1px solid rgba(0,154,170,0.15);padding:1rem"><span style="color:var(--d17a-pulse)">Stops generales:</span> HY Spread &gt;4% → salir de todo. ~26A sin extensión → salir de equities, añadir WTI calls. Oil &gt;$95 → reducir risk-on. Put/Call 0.56 — euforia extrema: reducir exposición equity.<br><span style="color:var(--d17a-pulse)">Catalizadores 7 días:</span> (1) <strong>Islamabad talks fin de semana — resultado define ~26A.</strong> (2) <strong>Contradicción nuclear Irán — cobertura mediática en aumento.</strong> (3) <strong>USD/JPY 158.60 → monitorear BoJ (reunión 28/4).</strong> (4) <strong>CLARITY Act en Senado = catalizador crypto.</strong> (5) <strong>~26A — el nuevo binario central del ciclo.</strong></div></div><div id="planB" class="op-plan-panel"><h3 style="font-family:var(--cond);font-size:.9rem;font-weight:700;letter-spacing:.1em;color:var(--orange);text-transform:uppercase;margin-bottom:1.2rem">Plan B — Ultra Agresivo · Setups Asimétricos del Día · R/R mínimo 1:2</h3><div style="margin-bottom:1rem;font-family:var(--mono);font-size:.54rem;color:var(--amber);background:rgba(245,197,24,0.04);border:1px solid rgba(245,197,24,0.2);padding:.8rem 1rem">⚠ Solo entrar con gatillo confirmado. El 22A es el evento binario central.</div><div class="op-setup"><div class="op-setup-header"><div class="op-setup-num">01</div><div class="op-setup-title">EUR/USD SHORT — Divergencia Fed vs BCE · Convicción ALTA · R/R 2.5:1</div></div><div class="op-setup-body">EUR/USD puts, strike 1.15, venc. mayo 2026. Superávit UE-EE.UU. cayó 60% (Eurostat). Oil baja → IPC euro mejora → BCE más dovish. IP europea débil. USD estructuralmente fuerte vs EUR. Entrada: <span class="num">1.1750-1.18</span>. Target: <span class="grn">1.14-1.15 en 30 días</span>. Stop: <span class="red">1.20 cierre semanal</span>.</div><div class="op-meta"><div class="op-meta-item"><span class="op-meta-label">R/R: </span><span class="op-meta-val">2.5:1</span></div><div class="op-meta-item"><span class="op-meta-label">Catalizador: </span><span class="op-meta-val">Fed speakers hawkish</span></div></div></div><div class="op-setup"><div class="op-setup-header"><div class="op-setup-num">02</div><div class="op-setup-title">LONG AI SEMIS — TSMC / NVDA / AVGO · Ciclo Estructural · R/R 2.5:1</div></div><div class="op-setup-body">Intel máximo desde 2000. AMD +16.4% semanal. TSMC capex $52-56B, ventas +30%. Ciclo AI infra multianual, inelástico a Ormuz. NVDA reporta en mayo. Entrada: <span class="num">mercado</span>. Target: <span class="grn">+15-20% próximo earnings</span>. Stop: <span class="red">−8%</span>.</div><div class="op-meta"><div class="op-meta-item"><span class="op-meta-label">R/R: </span><span class="op-meta-val">2.5:1</span></div><div class="op-meta-item"><span class="op-meta-label">Catalizador: </span><span class="op-meta-val">NVDA earnings mayo</span></div></div></div><div class="op-setup"><div class="op-setup-header"><div class="op-setup-num">03</div><div class="op-setup-title">GOLD PUTS / SHORT GOLD VOL — Trade Contrarian · Solo Opciones · R/R 2:1</div></div><div class="op-setup-body">GVZ 28.95 — elevated. Si ~26A confirma acuerdo nuclear verificado: oro puede ceder $200-300 desde $4,831. GVZ puts / short gold volatility. Entrada: <span class="num">GVZ &gt;30</span>. Target: <span class="grn">GVZ 20-22</span>. Stop: <span class="red">GVZ &gt;35 (escalada nuclear)</span>.</div><div class="op-meta"><div class="op-meta-item"><span class="op-meta-label">R/R: </span><span class="op-meta-val">2:1</span></div><div class="op-meta-item"><span class="op-meta-label">Trigger: </span><span class="op-meta-val">Ceasefire 22A confirmado</span></div></div></div>
+<div class="op-setup"><div class="op-setup-header"><div class="op-setup-num">04</div><div class="op-setup-title">WTI CALLS OTM — Rebote ~26A · Cobertura Asimétrica · R/R 5:1</div></div><div class="op-setup-body">WTI $82.59. Si ~26A no extiende → rebote $10-15 inmediato. OVX 69 = primas razonables. Calls OTM strike $90-95, venc. 30A. Pérdida máxima = prima. Entrada: <span class="num">CL1! $82-84</span>. Target: <span class="grn">$90-95 en 10-14 días</span>. Stop: <span class="red">prima total</span>.</div><div class="op-meta"><div class="op-meta-item"><span class="op-meta-label">R/R: </span><span class="op-meta-val">5:1</span></div><div class="op-meta-item"><span class="op-meta-label">Trigger: </span><span class="op-meta-val">Islamabad falla o ~26A sin extensión</span></div></div></div><div class="op-setup"><div class="op-setup-header"><div class="op-setup-num">05</div><div class="op-setup-title">USD/JPY LONG — Carry Trade Yen · Convicción MEDIA · R/R 1.5:1</div></div><div class="op-setup-body">USDJPY 158.616 (−0.33%). Risk-on → yen aprecia levemente. Diferencial tasas aún amplio. BoJ reunión 28/4. Carry positivo si hold. Entrada: <span class="num">158.60-159</span>. Target: <span class="grn">160.50-161</span>. Stop: <span class="red">157.00 (BoJ)</span>. <strong class="amb">⚠ Reversión puede ser 3-5 figuras en horas.</strong> Size mínimo.</div><div class="op-meta"><div class="op-meta-item"><span class="op-meta-label">R/R: </span><span class="op-meta-val">1.5:1</span></div><div class="op-meta-item"><span class="op-meta-label">Risk: </span><span class="op-meta-val">BoJ intervention 28/4</span></div></div></div></div></section><section class="section"><div class="sec-label" style="color:var(--d17a-pulse)">Línea de Fondo · 16 Abr 2026</div><h2 class="sec-title">LÍNEA DE FONDO — 16 ABRIL 2026</h2><div class="adv-box" style="background:rgba(26,158,114,0.04);border:1px solid rgba(26,158,114,0.3)"><div class="adv-box-header" style="color:var(--d17a-pulse)">🟡 12° VERDE · CEASEFIRE PARCIAL · S&P 7,041 ATH · PRECIOS PAGADOS 59.3 · AMARILLO</div><p>16 de abril: S&P 7,041.28 ATH. Nasdaq — 12ª jornada verde, racha más larga desde 2009. Ceasefire Israel-Líbano 10 días. Philly Fed 26.7 vs consenso 10. Claims 207K. TSMC capex $52-56B. Dell +8.92%.</p><br><p><strong style="color:var(--d17a-pulse)">El dato más importante del día no es el ATH — es el de precios pagados Philly: 59.3 (+14.6 puntos).</strong> <span class="warn">Con Ormuz bloqueado y petróleo elevado, esa combinación es exactamente la que la Fed teme y no puede combatir. El mercado de acciones celebra el ceasefire. El mercado de bonos ya incorporó que no hay cortes en 2026.</span></p><br><p>Y el detalle que el mercado aún no ha digerido: <strong>Irán desmintió públicamente el anuncio de Trump sobre el uranio enriquecido. La contradicción entre narrativas es el riesgo más importante de las próximas 24 horas.</strong> El evento binario central sigue siendo la semana del 22A: si el ceasefire con EE.UU. se extiende, el escenario es risk-on. Si no, el escenario opuesto, agresivo. 🟡 AMARILLO — constructivo táctico con ojo puesto en el 22A.</p></div></section><footer class="footer" style="border-top:1px solid rgba(212,160,23,0.12)"><div class="footer-brand" style="color:rgba(0,184,110,0.3)">WAR ROOM · 17 ABRIL 2026</div><div class="footer-disclaimer" style="font-family:var(--mono);font-size:.44rem;color:var(--gray-light);line-height:1.7;margin-bottom:1rem;max-width:720px">Esto no es asesoramiento financiero ni recomendación de inversión. Los datos provienen de fuentes públicas y pueden contener errores. Contenido exclusivamente educativo e informativo. Operar conlleva riesgo de pérdida total. Cada persona es responsable de sus propias decisiones.</div><div class="footer-nav" style="display:flex;flex-wrap:wrap;gap:.5rem"><a href="#advertencia" style="font-family:var(--mono);font-size:.48rem;letter-spacing:.1em;color:var(--gray-light);text-decoration:none;padding:3px 8px;border:1px solid rgba(255,255,255,0.04);text-transform:uppercase">⚡ Veredicto</a><a href="#stress" class="uis1">Estrés</a><a href="#geopolitica" class="uis1">Geopolítica</a><a href="#charts" class="uis1">Gráficos</a><a href="#delta" class="uis1">Tabla</a><a href="#semaforo" class="uis1">Semáforo</a><a href="#operativa" class="uis1">Operativa</a></div></footer>
+
+<script>
+// DATA — ventana 4 sesiones: 13A → 16A
+const LABELS=['14A','15A','16A','17A'];
+const DAY_MARKERS=[
+  {idx:0,label:'14A',color:'rgba(200,160,80,0.55)'},
+  {idx:1,label:'15A',color:'rgba(0,154,170,0.65)'},
+  {idx:2,label:'16A',color:'rgba(34,212,154,0.7)'},
+  {idx:3,label:'17A',color:'rgba(38,208,124,0.98)'}
+];
+
+const CHARTS_DATA=[
+{id:'ch_spx',cat:'riesgo',wide:true,title:'ES1! S&P 500 · 7,126.06 ATH · NASDAQ 13° VERDE · RACHA MÁS LARGA DESDE 1992',sub:'17A: ATH 7,126.06 (+1.20%) · ES1! 7,161 · RTY1! +2.13% · Dow 49,447 (+869pt) · Amplitud mejora',mainVal:'7,126.06',mainColor:'var(--green)',delta:'13° VERDE CONSECUTIVO · RACHA 1992 · RTY1! +2.13% · AMPLITUD MEJORANDO',deltaColor:'var(--d17a-pulse)',
+datasets:[{label:'S&P / ES1!',color:'#00d68f',values:[7004,7022.95,7041.28,7126]}],
+narrative:'17A: ATH 7,126.06. Nasdaq 13° verde (racha 1992). Ormuz abre condicionalmente. WTI −11%. BTC $77,470. RTY1! +2.13%. Intel máximo desde 2000.',
+days:LABELS},
+
+{id:'ch_wti',cat:'energia',wide:false,title:'WTI · CL1! $82.59 −12.78% · SPOT $83.61 −11.5% · ORMUZ ABRE · BRENT $90.38',sub:'17A: WTI spot $83.61 · CL1! $82.59 (−12.78%) · Brent $90.38 (−9.07%) · OVX 69 (elevated)',mainVal:'$83.61',mainColor:'var(--red)',delta:'ORMUZ CONDICIONAL · CGRI CONTROLA · ~26A BINARIO · OVX 69 ELEVATED',deltaColor:'var(--amber)',
+datasets:[{label:'WTI CL1!',color:'#b50000',values:[91.28,92.0,94.69,82.59]},{label:'Brent',color:'#ff8c35',values:[95.0,94.93,96.0,90.38]}],
+narrative:'17A: WTI $83.61 / CL1! $82.59 (−12.78%). Ormuz condicional (CGRI, 10d). Brent $90.38. OVX 69 elevated. ~26A binario: no extensión → WTI rebota $10-15.',
+days:LABELS},
+
+{id:'ch_gold',cat:'macro',wide:false,title:'Oro · GC1! $4,879 · XAUUSD $4,831 · GVZ 28.95 · MULTI-WEEK HIGH (NO ATH)',sub:'17A: XAUUSD $4,831 (+0.85%) · GC1! $4,879 (+1.48%) · GVZ 28.95 (+1.05%) · SI1! +3.98%',mainVal:'$4,831',mainColor:'var(--amber)',delta:'MULTI-WEEK HIGH · NO ATH ($5,589 · 28 ENE) · GVZ 28.95 ELEVATED · NUCLEAR IRRESUELTO',deltaColor:'var(--amber)',
+datasets:[{label:'Oro GC1!',color:'#e8c060',values:[4850,4800.7,4828,4879]},{label:'Plata SI1!/10',color:'#c8c8c8',values:[null,null,null,8.18]}],
+narrative:'17A: GC1! $4,879 (+1.48%). GVZ 28.95 elevated. Nuclear irresuelto. Acuerdo nuclear verificado: oro cede $200-300. Re-escalada: $5,000+. ATH real = $5,589 (28 ene).',
+days:LABELS},
+
+{id:'ch_dxy',cat:'macro',wide:false,title:'DXY · 98.226 · EUR/USD 1.1764 · USD/JPY 158.616 · BoJ 28/4',sub:'17A: DXY 98.226 (+0.05%) · EUR/USD 1.1764 (−0.16%) · USD/JPY 158.616 (−0.33%) · SOFR 3.67%',mainVal:'98.226',mainColor:'var(--amber)',delta:'DXY NEUTRAL · EUR/USD − superávit UE −60% · USDJPY 158.62 risk-on',deltaColor:'var(--amber)',
+datasets:[{label:'DXY',color:'#00d68f',values:[98.108,98.05,97.5,98.226]},{label:'USD/JPY /100',color:'#bf5af2',values:[1.5879,1.589,1.5918,1.5862]}],
+narrative:'17A: DXY 98.226. EUR/USD 1.1764 — superávit UE-EE.UU. cayó 60% (Eurostat). USDJPY 158.616 (−0.33%). BoJ 28/4. SOFR 3.67%.',
+days:LABELS},
+
+{id:'ch_ovx',cat:'riesgo',wide:false,title:'Volatilidad · VIX 17.47 · SKEW 141.82 · OVX 69 · GVZ 28.95',sub:'17A: VIX 17.47 (−2.67%) · SKEW 141.82 (+0.77%) · OVX 69 (−5.52%) · GVZ 28.95 (+1.05%) · MOVE 65.7',mainVal:'VIX 17.47',mainColor:'var(--green)',delta:'VIX BAJA PERO SKEW SUBE — COLA PAGADA · OVX 69 ELEVATED · ~26A BINARIO',deltaColor:'var(--amber)',
+datasets:[{label:'VIX',color:'#f5a623',values:[18.5,18.36,18.0,17.47]},{label:'MOVE/10',color:'#e84040',values:[7.435,7.435,null,6.57]}],
+narrative:'17A: VIX 17.47 (−2.67%). SKEW 141.82 (+0.77%) — VIX baja pero SKEW sube: cola comprada. OVX 69. GVZ 28.95. Put/Call 0.56 (−16%) = euforia.',
+days:LABELS},
+
+{id:'ch_10y',cat:'rates',wide:true,title:'US Yields · 10Y 4.248% ↓ · 2Y 3.706% ↓ · MOVE 65.7 · OIL BAJA → INFLACIÓN MEJORA',sub:'17A: US10Y 4.248% (−1.55%) · US2Y 3.706% (−1.96%) · US30Y 4.885% (−1.01%) · MOVE 65.7 (−0.30%)',mainVal:'10Y 4.248%',mainColor:'var(--green)',delta:'YIELDS BAJAN CON ORMUZ · OIL −11% REDUCE INFLACIÓN ESPERADA · 5Y5Y 2.16%',deltaColor:'var(--d17a-pulse)',
+datasets:[{label:'US 10Y %',color:'#f5a623',values:[4.281,4.281,4.33,4.248]},{label:'US 30Y %',color:'#e84040',values:[4.858,4.894,4.91,4.885]},{label:'US 2Y %',color:'#bf5af2',values:[3.761,3.761,3.72,3.706]}],
+narrative:'17A: US10Y 4.248% (−1.55%). US2Y 3.706% (−1.96%). MOVE 65.7 (−0.30%). Oil −11% → inflación baja → Fed gana margen. 5Y5Y 2.16%. SKEW 141 y OVX 69: cola activa.',
+days:LABELS}
+];
+
+function buildChart(c){
+  const w=document.createElement('div');w.className='ichart-container'+(c.wide?' charts-full-width':'');w.dataset.cat=c.cat;
+  const av=c.datasets.flatMap(d=>d.values.filter(v=>v!==null));const mn=Math.min(...av),mx=Math.max(...av);const r=mx-mn||1;const p=r*.12;
+  const lo=mn-p,hi=mx+p,sp=hi-lo;const n=c.datasets[0].values.length;const f=v=>v===null?'—':Math.abs(v)>1000?v.toFixed(0):v.toFixed(2);
+  w.innerHTML=`<div class="ichart-header"><div class="ichart-left"><div class="ichart-title">${c.title}</div><div class="ichart-sub">${c.sub}</div></div><div class="ichart-vals"><div class="ichart-main-val" style="color:${c.mainColor}">${c.mainVal}</div><div class="ichart-delta" style="color:${c.deltaColor}">${c.delta}</div></div></div><div class="ichart-body"><div class="ichart-svg-wrap" id="sw_${c.id}"><div class="crosshair" id="cr_${c.id}"></div><div class="chart-tooltip" id="tp_${c.id}"></div></div>${c.narrative?`<div class="ichart-narrative">${c.narrative}</div>`:''}</div><div class="ichart-legend" id="lg_${c.id}"></div>`;
+  setTimeout(()=>{
+    const le=document.getElementById('lg_'+c.id);
+    c.datasets.forEach((d,i)=>{const it=document.createElement('div');it.className='ileg';it.innerHTML=`<div class="ileg-dot" style="background:${d.color}"></div><span>${d.label}</span>`;it.addEventListener('click',()=>{it.classList.toggle('off');document.querySelectorAll(`#sw_${c.id} .ds-${i}`).forEach(p=>p.style.opacity=it.classList.contains('off')?'0':'1')});le.appendChild(it)});
+    rSVG(c,lo,hi,sp,mn,mx,n,f)},0);
+  return w
+}
+
+function rSVG(c,lo,hi,sp,mn,mx,n,f){
+  const we=document.getElementById('sw_'+c.id);if(!we)return;
+  const W=we.offsetWidth||500,H=130,PL=8,PR=8,PT=12,PB=20,IW=W-PL-PR,IH=H-PT-PB;
+  const NS='http://www.w3.org/2000/svg';const cx=i=>PL+(i/(n-1))*IW,cy=v=>v===null?PT+IH/2:PT+IH-((v-lo)/sp)*IH;
+  const s=document.createElementNS(NS,'svg');s.setAttribute('viewBox',`0 0 ${W} ${H}`);s.setAttribute('preserveAspectRatio','none');s.style.cssText='display:block;width:100%;height:100%;overflow:visible;';
+  const df=document.createElementNS(NS,'defs');s.appendChild(df);
+  [0,.25,.5,.75,1].forEach(r=>{const y=PT+IH*(1-r);const l=document.createElementNS(NS,'line');l.setAttribute('x1',PL);l.setAttribute('x2',W-PR);l.setAttribute('y1',y);l.setAttribute('y2',y);l.setAttribute('stroke','rgba(255,255,255,0.018)');l.setAttribute('stroke-width','0.5');s.appendChild(l)});
+  DAY_MARKERS.forEach(m=>{if(m.idx>=n)return;const x=cx(m.idx);const ml=document.createElementNS(NS,'line');ml.setAttribute('x1',x);ml.setAttribute('x2',x);ml.setAttribute('y1',PT);ml.setAttribute('y2',PT+IH);ml.setAttribute('stroke',m.color);ml.setAttribute('stroke-width',m.idx===10?'2.5':m.idx>=7?'1.5':'0.8');ml.setAttribute('stroke-dasharray','3,4');s.appendChild(ml);const lb=document.createElementNS(NS,'text');lb.setAttribute('x',x+2);lb.setAttribute('y',PT+8);lb.setAttribute('fill',m.color);lb.setAttribute('font-size','8');lb.setAttribute('font-family','IBM Plex Mono,monospace');lb.textContent=m.label;s.appendChild(lb)});
+  c.datasets.forEach((ds,di)=>{
+    const validPts=ds.values.map((v,i)=>v!==null?{x:cx(i),y:cy(v),v,i}:null).filter(Boolean);
+    if(validPts.length<2)return;
+    const gid=`g_${c.id}_${di}`;const gr=document.createElementNS(NS,'linearGradient');gr.setAttribute('id',gid);gr.setAttribute('x1','0');gr.setAttribute('y1','0');gr.setAttribute('x2','0');gr.setAttribute('y2','1');
+    const s1=document.createElementNS(NS,'stop');s1.setAttribute('offset','0%');s1.setAttribute('stop-color',ds.color);s1.setAttribute('stop-opacity','0.2');
+    const s2=document.createElementNS(NS,'stop');s2.setAttribute('offset','100%');s2.setAttribute('stop-color',ds.color);s2.setAttribute('stop-opacity','0');
+    gr.appendChild(s1);gr.appendChild(s2);df.appendChild(gr);
+    let aD=`M ${validPts[0].x} ${PT+IH} L ${validPts[0].x} ${validPts[0].y}`;validPts.forEach((p,i)=>{if(i>0)aD+=` L ${p.x} ${p.y}`});aD+=` L ${validPts[validPts.length-1].x} ${PT+IH} Z`;
+    const ar=document.createElementNS(NS,'path');ar.setAttribute('d',aD);ar.setAttribute('fill',`url(#${gid})`);ar.classList.add(`ds-${di}`);s.appendChild(ar);
+    let lD=`M ${validPts[0].x} ${validPts[0].y}`;validPts.forEach((p,i)=>{if(i===0)return;const prev=validPts[i-1];const cpx=(prev.x+p.x)/2;lD+=` C ${cpx} ${prev.y}, ${cpx} ${p.y}, ${p.x} ${p.y}`});
+    const lp=document.createElementNS(NS,'path');lp.setAttribute('d',lD);lp.setAttribute('fill','none');lp.setAttribute('stroke',ds.color);lp.setAttribute('stroke-width','2');lp.setAttribute('stroke-linejoin','round');lp.setAttribute('stroke-linecap','round');lp.classList.add(`ds-${di}`);lp.style.transition='opacity .2s';s.appendChild(lp);
+    const last=validPts[validPts.length-1];
+    const glowCircle=document.createElementNS(NS,'circle');glowCircle.setAttribute('cx',last.x);glowCircle.setAttribute('cy',last.y);glowCircle.setAttribute('r','14');glowCircle.setAttribute('fill',ds.color);glowCircle.setAttribute('opacity','0.25');glowCircle.classList.add(`ds-${di}`);s.appendChild(glowCircle);
+    const dot=document.createElementNS(NS,'circle');dot.setAttribute('cx',last.x);dot.setAttribute('cy',last.y);dot.setAttribute('r','6');dot.setAttribute('fill',ds.color);dot.setAttribute('stroke','rgba(4,2,4,0.8)');dot.setAttribute('stroke-width','1.5');dot.classList.add(`ds-${di}`);s.appendChild(dot)
+  });
+  we.appendChild(s);
+  const te=document.getElementById('tp_'+c.id),ce=document.getElementById('cr_'+c.id);
+  const ov=document.createElementNS(NS,'rect');ov.setAttribute('x',PL);ov.setAttribute('y',PT);ov.setAttribute('width',IW);ov.setAttribute('height',IH);ov.setAttribute('fill','transparent');ov.style.cursor='crosshair';s.appendChild(ov);
+  ov.addEventListener('mousemove',e=>{const sr=s.getBoundingClientRect();const mx2=e.clientX-sr.left;const fx=Math.max(0,Math.min(1,(mx2-PL)/IW));const ri=Math.round(fx*(n-1));const ci2=Math.max(0,Math.min(n-1,ri));ce.style.left=(cx(ci2)/W*100)+'%';ce.classList.add('show');const dl=c.days?c.days[ci2]:LABELS[ci2];let h=`<div class="tt-date">${dl}</div>`;c.datasets.forEach(ds=>{const v=ds.values[ci2];h+=`<div class="tt-row"><span class="tt-label" style="color:${ds.color}">${ds.label.slice(0,16)}</span><span class="tt-val" style="color:${ds.color}">${v===null?'—':f(v)}</span></div>`});te.innerHTML=h;te.classList.add('show');let l=cx(ci2)/W*100;te.style.left=(l>65?l-22:l+1.5)+'%';te.style.top='5px'});
+  ov.addEventListener('mouseleave',()=>{te.classList.remove('show');ce.classList.remove('show')})
+}
+
+function buildAllCharts(){const g=document.getElementById('chartsGrid');CHARTS_DATA.forEach(c=>{g.appendChild(buildChart(c))})}
+function filterCharts(cat,btn){document.querySelectorAll('.ctab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('#chartsGrid .ichart-container').forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none'})}
+function filterSem(f,btn){document.querySelectorAll('.sfbtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('#semGrid .sem-card').forEach(c=>{c.style.display=(f==='all'||c.dataset.sem===f)?'':'none'})}
+function switchPlan(id,btn){document.querySelectorAll('.op-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.op-plan-panel').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active')}
+
+const SIDS=['hero','advertencia','stress','polymarket','geopolitica','charts','delta','semaforo','operativa'];
+window.addEventListener('scroll',function(){
+  const st=window.scrollY;const dh=document.body.scrollHeight-window.innerHeight;
+  document.getElementById('progress-bar').style.width=(st/dh*100)+'%';
+  const h=document.getElementById('hero');const p=document.getElementById('market-pulse');
+  if(h&&st>h.offsetHeight*.5)p.classList.add('show');else p.classList.remove('show');
+  const mid=st+window.innerHeight*.38;let ai=SIDS[0];
+  SIDS.forEach(id=>{const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top+st<=mid)ai=id});
+  document.querySelectorAll('.s-dot').forEach(d=>{d.classList.toggle('active',d.dataset.target===ai)});
+  document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.toggle('active',a.dataset.nav===ai)})
+},{passive:true});
+
+function scrollToSec(id){const el=document.getElementById(id);if(!el)return;window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-86,behavior:'smooth'})}
+
+(function(){const cnt={all:0,g:0,y:0,r:0};document.querySelectorAll('#semGrid .sem-card').forEach(c=>{const t=c.dataset.sem;cnt[t]=(cnt[t]||0)+1;cnt.all++});['all','g','y','r'].forEach(k=>{const el=document.getElementById('cnt-'+k);if(el)el.textContent='('+cnt[k]+')'})})();
+(function(){const w=(document.body.innerText||'').split(/\s+/).filter(Boolean).length;const el=document.getElementById('readEst');if(el)el.textContent='~'+Math.ceil(w/210)+' min'})();
+
+const obs=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.06});
+document.querySelectorAll('.section').forEach(s=>obs.observe(s));
+
+function updateTime(){const n=new Date();const el=document.getElementById('liveTime');if(el)el.textContent=String(n.getUTCHours()).padStart(2,'0')+':'+String(n.getUTCMinutes()).padStart(2,'0')+' UTC'}
+updateTime();setInterval(updateTime,30000);
+
+document.addEventListener('DOMContentLoaded',()=>{buildAllCharts();wrInit();});
+
+function wrInit(){
+  const rm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(!rm){
+    document.querySelectorAll('.hs-val').forEach((el,i)=>{
+      const orig=el.textContent.trim();
+      if(orig.includes('Sub')||orig.includes('CONTAGIO')||orig.includes('King')||orig.includes('RUIDO'))return;
+      const pre=orig.startsWith('$')?'$':orig.startsWith('~$')?'~$':'';
+      const raw=orig.replace(/[$~,K%]/g,'');
+      const n=parseFloat(raw);
+      if(isNaN(n))return;
+      const isK=orig.includes('K');
+      const fmt=v=>{
+        if(isK)return pre+v.toFixed(1)+'K';
+        const dec=(raw.match(/\.(\d+)$/)||[,''])[1].length;
+        return pre+v.toFixed(dec)+(orig.includes('%')?'%':'');
+      };
+      el.textContent=fmt(0);
+      setTimeout(()=>{
+        const t0=performance.now(),dur=900+i*70;
+        const tick=t=>{
+          const p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,3);
+          el.textContent=fmt(n*e);
+          p<1?requestAnimationFrame(tick):(el.textContent=orig);
+        };
+        requestAnimationFrame(tick);
+      },480+i*90);
+    });
+
+  }
+}
+</script>
+</body></html>
